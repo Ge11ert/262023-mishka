@@ -133,5 +133,24 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
       </div>
     </footer>
+    <div class="size-select size-select--modal">
+      <h2 class="size-select__title">Добавить в корзину</h2>
+      <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
+        <span class="size-select__notice">Выберите размер:</span>
+        <p class="size-select__input">
+          <input type="radio" name="size" value="s" id="s-size" checked>
+          <label for="s-size">S</label>
+        </p>
+        <p class="size-select__input">
+          <input type="radio" name="size" value="m" id="m-size">
+          <label for="m-size">M</label>
+        </p>
+        <p class="size-select__input">
+          <input type="radio" name="size" value="l" id="l-size">
+          <label for="l-size">L</label>
+        </p>
+        <input type="submit" class="size-select__send-btn" value="Добавить">
+      </form>
+    </div>
   </body>
 </html>
