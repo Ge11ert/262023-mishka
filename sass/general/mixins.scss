@@ -1,0 +1,10 @@
+@mixin block-padding {
+  padding-left: $content-padding;
+  padding-right: $content-padding;
+}
+
+@mixin title-font {
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: bold;
+}

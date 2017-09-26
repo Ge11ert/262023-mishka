@@ -1,0 +1,42 @@
+.offer {
+  @include block-padding;
+
+  .offer__title {
+    margin: 0;
+    @include title-font;
+  }
+
+  .offer__subtitle {
+    color: #63d1bb;
+    line-height: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  .offer__description {
+    color: $grey;
+    font-size: 15px;
+  }
+
+  .offer__properties {
+    border-collapse: collapse;
+    color: $grey;
+    font-size: 15px;
+  }
+
+  .offer__prop-name,
+  .offer__prop-value {
+    padding: 7.5px 0;
+    border-bottom: 1px solid $stroke-color;
+  }
+
+  .offer__prop-name {
+    padding-right: 31px;
+  }
+
+  .offer__price {
+    margin: 0;
+    font-weight: bold;
+    color: $grey;
+  }
+}

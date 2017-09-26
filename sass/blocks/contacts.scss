@@ -1,0 +1,26 @@
+.contacts {
+  @include block-padding;
+
+  .contacts__title {
+    margin: 0;
+    @include title-font;
+    font-size: 18px;
+  }
+
+  .contacts__email {
+    color: $grey;
+    font-size: 15px;
+    line-height: 30px;
+  }
+
+  .contacts__link {
+    color: $grey;
+    border-bottom: 1px solid #62d1ba;
+  }
+
+  .contacts__address {
+    color: $grey;
+    font-size: 15px;
+    line-height: 30px;
+  }
+}

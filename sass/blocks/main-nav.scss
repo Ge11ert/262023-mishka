@@ -1,0 +1,26 @@
+.main-nav {
+  @include block-padding;
+
+  .main-nav__logo {
+    display: inline-block;
+    width: 86px;
+    height: 35px;
+    font-size: 0;
+    background-image: url("../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+
+  .main-nav__toggle-button {
+    width: 20.5px;
+    height: 20.5px;
+    background: none;
+    background-image: url("../img/icon-menu-close.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+    font-size: 0;
+    line-height: 0;
+  }
+}

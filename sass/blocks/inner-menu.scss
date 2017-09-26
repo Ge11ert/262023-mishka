@@ -1,0 +1,23 @@
+.inner-menu {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .inner-menu__button {
+    @include block-padding;
+
+    &--light {
+      background-color: #63d1bb;
+    }
+
+    &--dark {
+      background-color: #56c3b2;
+    }
+  }
+
+  .inner-menu__link {
+    color: #fff;
+    font-size: 19px;
+    font-weight: bold;
+  }
+}

@@ -1,0 +1,8 @@
+.comments-list {
+  @include block-padding;
+
+  .comments-list__title {
+    margin: 0;
+    @include title-font;
+  }
+}
