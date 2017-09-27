@@ -4,18 +4,22 @@
   list-style: none;
 
   .inner-menu__button {
-    @include block-padding;
 
     &--light {
-      background-color: #63d1bb;
+      background-color: $theme-color;
     }
 
     &--dark {
-      background-color: #56c3b2;
+      background-color: $theme-dark;
     }
   }
 
   .inner-menu__link {
+    display: block;
+    @include block-padding;
+    padding-top: 26px;
+    padding-bottom: 28px;
+
     color: #fff;
     font-size: 19px;
     font-weight: bold;

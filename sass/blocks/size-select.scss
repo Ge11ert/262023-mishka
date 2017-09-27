@@ -3,6 +3,7 @@
 
   .size-select__title {
     @include title-font;
+    margin: 0;
 
     text-transform: uppercase;
   }
@@ -11,6 +12,10 @@
     font-size: 15px;
     line-height: 30px;
     color: $grey;
+  }
+
+  .size-select__input {
+    margin: 0;
   }
 
   .size-select__label {

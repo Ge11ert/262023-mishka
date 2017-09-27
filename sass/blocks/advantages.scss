@@ -1,5 +1,7 @@
 .advantages {
   @include block-padding;
+  padding-top: 28px;
+  padding-bottom: 26px;
 
   .advantages__title {
     margin: 0;
@@ -17,6 +19,10 @@
     padding-bottom: 33px;
     line-height: 20px;
     font-weight: bold;
+
+    &:last-child {
+      padding-bottom: 0;
+    }
 
     &::before {
       content: "";
