@@ -2,4 +2,8 @@
   @include block-padding;
 
   background-color: #f1f1f1;
+
+  .footer__item:last-child {
+    border-top: 1px solid #e5e5e5;
+  }
 }

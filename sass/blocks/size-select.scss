@@ -1,0 +1,46 @@
+.size-select {
+  @include block-padding;
+
+  .size-select__title {
+    @include title-font;
+
+    text-transform: uppercase;
+  }
+
+  .size-select__notice {
+    font-size: 15px;
+    line-height: 30px;
+    color: $grey;
+  }
+
+  .size-select__label {
+    display: block;
+    width: 78px;
+    padding: 15.5px 0;
+
+    font-size: 17px;
+    line-height: 1;
+    font-weight: bold;
+    color: $grey;
+    text-align: center;
+
+    border: 2px solid transparentize($grey, 0.9);
+  }
+
+  input[type="radio"]:checked + .size-select__label {
+    border-color: $theme-color;
+  }
+
+  .size-select__send-btn {
+    padding: 15.8px 82px;
+    font-size: 17px;
+    line-height: 1.2;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+
+    border: none;
+    background: none;
+    background-color: $theme-color;
+  }
+}
