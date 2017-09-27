@@ -1,0 +1,16 @@
+.inner-page {
+
+  .inner-page__container {
+    @include block-padding;
+    min-height: 176px;
+    background-color: $bg-color;
+  }
+
+  .inner-page__title {
+    margin: 0;
+    font-size: 27px;
+    line-height: 30px;
+    color: $inner-title;
+    text-align: center;
+  }
+}

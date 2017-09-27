@@ -1,0 +1,31 @@
+.form {
+
+  .form__props,
+  .form__name,
+  .form__contacts {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .form__title {
+    font-size: 17px;
+    line-height: 1;
+    font-weight: bold;
+    color: $theme-color;
+    text-transform: uppercase;
+  }
+
+  label {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  input[type="text"] {
+    padding: 16px 0;
+    border: none;
+    border-bottom: 2px solid #000;
+  }
+
+}
