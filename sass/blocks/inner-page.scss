@@ -2,12 +2,17 @@
 
   .inner-page__container {
     @include block-padding;
+
+    display: flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
     min-height: 176px;
+    box-sizing: border-box;
     background-color: $bg-color;
   }
 
   .inner-page__title {
-    margin: 0;
+    margin: auto;
     font-size: 27px;
     line-height: 30px;
     color: $inner-title;

@@ -1,0 +1,46 @@
+.promo {
+  padding-top: 23px;
+  padding-bottom: 33px;
+
+  border: 1px solid $stroke-color;
+
+  .promo__title {
+    margin: 0;
+    padding: 0 34px;
+    font-size: 17px;
+  }
+
+  .promo__video {
+    position: relative;
+
+    font-size: 0;
+    line-height: 0;
+  }
+
+  .promo__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    width: 102px;
+    height: 78px;
+
+    background-image: url("../../img/icon-play.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .promo__text {
+    margin: 0;
+    padding: 28px 34px 0;
+
+    font-size: 13px;
+    color: $grey;
+  }
+
+  .promo__link {
+    margin-top: 23px;
+  }
+
+}
