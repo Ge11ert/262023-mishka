@@ -4,7 +4,6 @@
   list-style: none;
 
   .inner-menu__button {
-
     &--light {
       background-color: $theme-color;
     }
@@ -16,11 +15,12 @@
 
   .inner-menu__link {
     display: block;
+
     @include block-padding;
     padding-top: 26px;
     padding-bottom: 28px;
 
-    color: #fff;
+    color: #ffffff;
     font-size: 19px;
     font-weight: bold;
   }

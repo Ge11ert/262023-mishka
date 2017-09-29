@@ -6,6 +6,7 @@
   .comments-list__title {
     margin: 0;
     margin-bottom: 23px;
+
     @include title-font;
   }
 
