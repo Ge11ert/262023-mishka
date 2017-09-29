@@ -1,9 +1,12 @@
 .size-select {
   @include block-padding;
+  padding-top: 31px;
+  padding-bottom: 46px;
 
   .size-select__title {
     @include title-font;
     margin: 0;
+    margin-bottom: 12px;
 
     text-transform: uppercase;
   }

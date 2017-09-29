@@ -74,17 +74,21 @@
             </p>
           </div>
         </article>
-        <section class="promo">
-          <h2 class="promo__title">Процесс производства</h2>
+        <section class="products__card promo">
+          <div class="promo__container">
+            <h2 class="promo__title">Процесс производства</h2>
+          </div>
           <div class="promo__video">
             <img src="./img/video-mobile@1x.jpg" width="260" height="150" alt="">
             <a href="#" class="promo__play">Воспроизвести</a>
           </div>
-          <p class="promo__text">
-            По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-            о том, как появляются наши товары.
-            <a href="./form.html" class="promo__link link-button">Сделать заказ</a>
-          </p>
+          <div class="promo__container">
+            <p class="promo__text">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+              о том, как появляются наши товары.
+              <a href="./form.html" class="promo__link link-button">Сделать заказ</a>
+            </p>
+          </div>
         </section>
       </section>
     </main>
@@ -114,15 +118,15 @@
         <span class="size-select__notice">Выберите размер:</span>
         <p class="size-select__input">
           <input type="radio" name="size" value="s" id="s-size" checked>
-          <label for="s-size">S</label>
+          <label class="size-select__label" for="s-size">S</label>
         </p>
         <p class="size-select__input">
           <input type="radio" name="size" value="m" id="m-size">
-          <label for="m-size">M</label>
+          <label class="size-select__label" for="m-size">M</label>
         </p>
         <p class="size-select__input">
           <input type="radio" name="size" value="l" id="l-size">
-          <label for="l-size">L</label>
+          <label class="size-select__label" for="l-size">L</label>
         </p>
         <input type="submit" class="size-select__send-btn" value="Добавить">
       </form>
