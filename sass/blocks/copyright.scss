@@ -1,0 +1,22 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+
+  .copyright__text {
+    font-size: 19px;
+    line-height: 1.2;
+    font-weight: bold;
+  }
+
+  .copyright__link {
+    width: 27px;
+    height: 34px;
+
+    font-size: 0;
+    line-height: 0;
+
+    background-image: url("../../img/logo-htmlacademy.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

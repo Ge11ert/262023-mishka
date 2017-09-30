@@ -1,0 +1,26 @@
+.controls {
+  margin-bottom: 38px;
+  font-size: 0;
+  line-height: 0;
+  border: 1px solid $stroke-color;
+
+  .controls__button {
+    height: 50px;
+    width: 50%;
+
+    border: none;
+    background: none;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+
+    &--prev {
+      background-image: url("../../img/icon-left-arrow.svg");
+      border-right: 1px solid $stroke-color;
+    }
+
+    &--next {
+      background-image: url("../../img/icon-right-arrow.svg");
+    }
+  }
+}

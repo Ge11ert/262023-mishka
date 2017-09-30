@@ -1,0 +1,16 @@
+.comments-list {
+  @include block-padding;
+  padding-top: 28px;
+  padding-bottom: 44px;
+
+  .comments-list__title {
+    margin: 0;
+    margin-bottom: 23px;
+
+    @include title-font;
+  }
+
+  .comments-list__item {
+    margin-bottom: 30px;
+  }
+}

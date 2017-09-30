@@ -1,0 +1,11 @@
+.footer {
+  @include block-padding;
+  padding-top: 24px;
+  padding-bottom: 23px;
+
+  background-color: $bg-color;
+
+  .footer__item:last-child {
+    border-top: 1px solid #e5e5e5;
+  }
+}

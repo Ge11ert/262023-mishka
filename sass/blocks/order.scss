@@ -1,0 +1,11 @@
+.order {
+  @include block-padding;
+  padding-top: 22px;
+  background-color: #ffffff;
+
+  .order__info-text {
+    margin: 0;
+    font-size: 13px;
+    color: $grey;
+  }
+}

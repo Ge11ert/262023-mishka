@@ -1,0 +1,113 @@
+.form {
+  .form__props,
+  .form__name,
+  .form__contacts {
+    margin: 0;
+    padding: 0;
+    border: none;
+  }
+
+  .form__props {
+    margin-bottom: 34px;
+  }
+
+  .form__title {
+    display: block;
+    font-size: 17px;
+    line-height: 1;
+    font-weight: bold;
+    color: $theme-color;
+    text-transform: uppercase;
+  }
+
+  .form__input-container {
+    margin: 0;
+    margin-bottom: 22px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  label {
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+  }
+
+  .form__input {
+    &--text {
+      padding: 16px 0;
+      border: none;
+      border-bottom: 2px solid #000000;
+    }
+
+    &--radio {
+      display: none;
+    }
+
+    &--checkbox {
+      display: none;
+    }
+
+    &--additional {
+      width: 100%;
+      padding: 16px;
+      box-sizing: border-box;
+      resize: horizontal;
+      border: 2px solid $grey;
+    }
+  }
+
+  .form__input--radio + label,
+  .form__input--checkbox + label {
+    position: relative;
+    display: inline-block;
+    padding-left: 65px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    cursor: pointer;
+  }
+
+  .form__input--radio + label::before {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 16px;
+    height: 16px;
+    border: 9px solid #ffffff;
+    box-shadow: 0 0 0 2px $grey;
+    border-radius: 50%;
+  }
+
+  .form__input--radio:checked + label::before {
+    background-color: $theme-color;
+  }
+
+  .form__input--checkbox + label::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 36px;
+    height: 36px;
+    border: 2px solid $grey;
+  }
+
+  .form__input--checkbox:checked + label::before {
+    background-image: url("../../img/icon-tick.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 22px;
+  }
+
+  .form__notice {
+    margin: 0;
+    font-size: 14px;
+    line-height: 16px;
+    color: $grey;
+  }
+}

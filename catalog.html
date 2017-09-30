@@ -2,7 +2,9 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
+    <link rel="stylesheet" href="/css/style.css">
   </head>
   <body>
     <header class="header">
@@ -26,67 +28,73 @@
       </nav>
     </header>
     <main class="inner-page">
-      <h1 class="inner-page__title">Каталог товаров</h1>
+      <div class="inner-page__container">
+        <h1 class="inner-page__title">Каталог товаров</h1>
+      </div>
       <section class="products">
         <article class="products__card">
           <div class="products__image">
-            <img src="http://via.placeholder.com/260x195" alt="Фото зайчика" width="260" height="195">
+            <img src="./img/photo-hare-mobile@1x.jpg" alt="Фото зайчика" width="260" height="195">
           </div>
           <div class="products__desc">
-            <h1 class="products__name"><a href="#">Зайчик-попрыгайчик</a></h1>
+            <h1 class="products__name"><a href="#" class="products__link">Зайчик-попрыгайчик</a></h1>
             <p class="products__info">
               Рост 30 см, вес 200 г
             </p>
             <p class="products__price">
-              <a href="#">1 200 руб.</a>
+              <a href="#" class="products__link products__link--price">1 200 руб.</a>
             </p>
           </div>
         </article>
         <article class="products__card">
           <div class="products__image">
-            <img src="http://via.placeholder.com/260x195" alt="Фото корзинки" width="260" height="195">
+            <img src="./img/photo-bowl-mobile@1x.jpg" alt="Фото корзинки" width="260" height="195">
           </div>
           <div class="products__desc">
-            <h1 class="products__name"><a href="#">Корзинка для белья</a></h1>
+            <h1 class="products__name"><a href="#" class="products__link">Корзинка для белья</a></h1>
             <p class="products__info">
               Диаметр 15 см, высота 10 см
             </p>
             <p class="products__price">
-              <a href="#">690 руб.</a>
+              <a href="#" class="products__link products__link--price">690 руб.</a>
             </p>
           </div>
         </article>
         <article class="products__card">
           <div class="products__image">
-            <img src="http://via.placeholder.com/260x195" alt="Фото корзинки" width="260" height="195">
+            <img src="./img/photo-toys-mobile@1x.jpg" alt="Фото корзинки" width="260" height="195">
           </div>
           <div class="products__desc">
-            <h1 class="products__name"><a href="#">Большая корзинка для игрушек</a></h1>
+            <h1 class="products__name"><a href="#" class="products__link">Большая корзинка для игрушек</a></h1>
             <p class="products__info">
               Диаметр 30 см, высота 30 см
             </p>
             <p class="products__price">
-              <a href="#">1 500 руб.</a>
+              <a href="#" class="products__link products__link--price">1 500 руб.</a>
             </p>
           </div>
         </article>
-      </section>
-      <section class="promo">
-        <h2 class="promo__title">Процесс производства</h2>
-        <div class="promo__video">
-          <img src="http://via.placeholder.com/260x150" alt="">
-          <a href="#">Воспроизвести</a>
-        </div>
-        <p class="promo__text">
-          По просьбам наших любимых фолловеров мы сняли для вас подробное видео
-          о том, как появляются наши товары.
-        </p>
-        <a href="./form.html" class="promo__link link-button">Сделать заказ</a>
+        <section class="products__card promo">
+          <div class="promo__container">
+            <h2 class="promo__title">Процесс производства</h2>
+          </div>
+          <div class="promo__video">
+            <img src="./img/video-mobile@1x.jpg" width="260" height="150" alt="">
+            <a href="#" class="promo__play">Воспроизвести</a>
+          </div>
+          <div class="promo__container">
+            <p class="promo__text">
+              По просьбам наших любимых фолловеров мы сняли для вас подробное видео
+              о том, как появляются наши товары.
+              <a href="./form.html" class="promo__link link-button">Сделать заказ</a>
+            </p>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="footer">
       <section class="footer__item social">
-        <h2 class="social__title visually-hiiden">Мы в соцсетях:</h2>
+        <h2 class="social__title visually-hidden">Мы в соцсетях:</h2>
         <ul class="social__list">
           <li class="social__item">
             <a href="https://instagram.com" class="social__link social__link--ig">Инстаграм</a>
@@ -110,15 +118,15 @@
         <span class="size-select__notice">Выберите размер:</span>
         <p class="size-select__input">
           <input type="radio" name="size" value="s" id="s-size" checked>
-          <label for="s-size">S</label>
+          <label class="size-select__label" for="s-size">S</label>
         </p>
         <p class="size-select__input">
           <input type="radio" name="size" value="m" id="m-size">
-          <label for="m-size">M</label>
+          <label class="size-select__label" for="m-size">M</label>
         </p>
         <p class="size-select__input">
           <input type="radio" name="size" value="l" id="l-size">
-          <label for="l-size">L</label>
+          <label class="size-select__label" for="l-size">L</label>
         </p>
         <input type="submit" class="size-select__send-btn" value="Добавить">
       </form>

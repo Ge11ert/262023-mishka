@@ -1,0 +1,32 @@
+.site-nav {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  .site-nav__link {
+    display: block;
+    padding-left: 75px;
+    padding-top: 26.5px;
+    padding-bottom: 26.5px;
+
+    color: #000000;
+    font-size: 17px;
+    line-height: 24px;
+    font-weight: bold;
+    border-bottom: 1px solid $stroke-color;
+
+    &--search {
+      background-image: url("../../img/icon-search.svg");
+      background-repeat: no-repeat;
+      background-position: 32px center;
+    }
+
+    &--basket {
+      background-image: url("../../img/icon-cart.svg");
+      background-repeat: no-repeat;
+      background-position: 32px center;
+    }
+  }
+}
