@@ -18,3 +18,11 @@
     text-align: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .inner-page {
+    .inner-page__title {
+      @include title-font-tablet;
+    }
+  }
+}

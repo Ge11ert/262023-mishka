@@ -1,5 +1,6 @@
 .controls {
   margin-bottom: 38px;
+  width: 260px;
   font-size: 0;
   line-height: 0;
   border: 1px solid $stroke-color;
@@ -21,6 +22,19 @@
 
     &--next {
       background-image: url("../../img/icon-right-arrow.svg");
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .controls {
+    width: 175px;
+    margin-bottom: 0;
+    border: none;
+
+    .controls__button {
+      height: 26px;
+      border: none;
     }
   }
 }

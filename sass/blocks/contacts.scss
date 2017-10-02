@@ -21,7 +21,7 @@
   .contacts__link {
     padding-bottom: 5px;
     color: $grey;
-    border-bottom: 1px solid #62d1ba;
+    border-bottom: 1px solid $theme-color;
   }
 
   .contacts__address {
@@ -32,5 +32,18 @@
 
   .contacts__address-text {
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    display: flex;
+    flex-wrap: wrap;
+
+    .contacts__title {
+      @include title-font-tablet;
+
+      width: 100%;
+    }
   }
 }

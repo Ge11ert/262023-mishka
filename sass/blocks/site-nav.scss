@@ -16,17 +16,20 @@
     line-height: 24px;
     font-weight: bold;
     border-bottom: 1px solid $stroke-color;
+  }
+}
 
-    &--search {
-      background-image: url("../../img/icon-search.svg");
-      background-repeat: no-repeat;
-      background-position: 32px center;
-    }
+@media (min-width: $tablet-width) {
+  .site-nav {
+    flex-direction: row;
+    order: 2;
 
-    &--basket {
-      background-image: url("../../img/icon-cart.svg");
-      background-repeat: no-repeat;
-      background-position: 32px center;
+    background-color: $lightgrey;
+
+    .site-nav__link {
+      padding: 17px 0px 0px 50px;
+      font-size: 15px;
+      border: none;
     }
   }
 }
