@@ -69,6 +69,8 @@
 
     .advantages__title {
       width: 100%;
+
+      @include title-font-tablet;
     }
 
     .advantages__list {
@@ -76,6 +78,28 @@
       flex-direction: column;
       flex-wrap: wrap;
       width: 50%;
+    }
+
+    .advantages__item {
+      font-size: 20px;
+      line-height: 22px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    max-width: 1150px;
+    margin: 0 auto;
+    padding-left: 225px;
+    box-sizing: border-box;
+
+    .advantages__title {
+      @include title-font-desktop;
+    }
+
+    .advantages__list {
+      width: 300px;
     }
   }
 }

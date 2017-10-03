@@ -50,3 +50,15 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comments-list {
+    max-width: 1050px;
+    margin: 0 auto;
+
+    .comments-list__title {
+      @include title-font-desktop;
+      margin-left: 175px;
+    }
+  }
+}

@@ -34,7 +34,7 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .inner-menu {
     flex-direction: row;
 
@@ -42,11 +42,31 @@
 
     .inner-menu__button {
       flex-basis: 50%;
+
+      &--dark {
+        background-position: right 33px center;
+      }
     }
 
     .inner-menu__link {
-      padding-left: 36px;
-      padding-right: 36px;
+      padding: 29px 36px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-menu {
+    .inner-menu__link {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .inner-menu__button {
+      &--dark {
+        background-position: right 36px center;
+      }
     }
   }
 }

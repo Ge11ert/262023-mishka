@@ -36,10 +36,12 @@
 @media (min-width: $tablet-width) {
   .user-nav {
     flex-direction: row;
+    // border-bottom: 1px solid $stroke-color;
 
     .user-nav__link {
       padding-left: 82px;
       border-left: 1px solid $stroke-color;
+      border-bottom: none;
 
       &--search {
         font-size: 0;
@@ -50,5 +52,12 @@
         padding-right: 50px;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-nav {
+    width: 500px;
+    justify-content: flex-end;
   }
 }

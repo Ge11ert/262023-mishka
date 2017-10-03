@@ -22,14 +22,40 @@
 @media (min-width: $tablet-width) {
   .site-nav {
     flex-direction: row;
-    order: 2;
-
-    background-color: $lightgrey;
+    order: 1;
 
     .site-nav__link {
       padding: 17px 0px 0px 50px;
       font-size: 15px;
       border: none;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-nav {
+    order: -1;
+    width: 500px;
+    // border-bottom: 1px solid $stroke-color;
+
+    .site-nav__item {
+      padding-left: 50px;
+      padding-right: 36px;
+
+      &:first-child {
+        border-right: 1px solid $stroke-color;
+      }
+
+      &:nth-child(n+2) {
+        padding-left: 35px;
+      }
+    }
+
+    .site-nav__link {
+      font-size: 17px;
+      padding: 0;
+      padding-top: 26.5px;
+      padding-bottom: 26.5px;
     }
   }
 }

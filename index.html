@@ -29,12 +29,21 @@
             <a href="#" class="user-nav__link user-nav__link--basket">Корзина: <span>пока пуста</span></a>
           </li>
         </ul>
+        <ul class="main-nav__list additional-nav">
+          <li class="additional-nav__item">
+            <a href="#" class="additional-nav__link">Новые поступления</a>
+          </li>
+          <li class="additional-nav__item">
+            <a href="#" class="additional-nav__link">Распродажа</span></a>
+          </li>
+        </ul>
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
     <main class="content">
       <section class="site-intro">
         <div class="site-intro__container">
-          <h1 class="site-intro__title">Милые штуки ручной работы&nbsp;для дома</h1>
+          <h1 class="site-intro__title">Милые штуки ручной<br>работы&nbsp;для дома</h1>
         </div>
         <ul class="site-intro__menu inner-menu">
           <li class="inner-menu__button inner-menu__button--light">
@@ -75,8 +84,8 @@
         <h2 class="advantages__title">Коротко о нас:</h2>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--flower">Экологически чистые материалы</li>
-          <li class="advantages__item advantages__item--money">Скандинавский стиль по российской цене</li>
-          <li class="advantages__item advantages__item--heart">Увеличивает лайки на фотографиях</li>
+          <li class="advantages__item advantages__item--money">Скандинавский стиль по&nbsp;российской цене</li>
+          <li class="advantages__item advantages__item--heart">Увеличивает лайки на&nbsp;фотографиях</li>
         </ul>
         <ul class="advantages__list">
           <li class="advantages__item advantages__item--ball">Связано вручную с любовью и умилением</li>
@@ -106,27 +115,30 @@
         <a href="#" class="comments-list__write link-button">Написать</a>
       </section>
       <section class="contacts">
-        <h2 class="contacts__title">Контакты</h2>
-        <div class="contacts__email">
-          <span class="contacts__type">email: </span>
-          <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+        <div class="contacts__container">
+          <h2 class="contacts__title">Контакты</h2>
+          <div class="contacts__email">
+            <span class="contacts__type">email: </span>
+            <a class="contacts__link" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
+          </div>
+          <div class="contacts__address">
+            <span class="contacts__type">адрес: </span>
+            <p class="contacts__address-text">
+              г. Санкт-Петербург,<br>ул.&nbsp;Большая Конюшенная, д.&nbsp;19/8, офис 101
+            </p>
+          </div>
         </div>
-        <div class="contacts__address">
-          <span class="contacts__type">адрес: </span>
-          <p class="contacts__address-text">
-            г. Санкт-Петербург, ул. Большая Конюшенная, д. 19/8, офис 101
-          </p>
+        <div class="contacts__map-container">
+          <iframe class="contacts__map-image" width="320" height="457"src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKadbyg8xlkYRn4c8SdRTnOo&key=AIzaSyCro3tHChMiGSgzL_9c4i_nZrinIxPum5o" allowfullscreen></iframe>
         </div>
       </section>
-      <div class="map">
-        <img class="map__image" src="./img/map-mobile@1x.jpg" width="322" height="457" alt="">
-      </div>
       <div class="feedback">
         <a href="#" class="link-button">Напишите нам</a>
       </div>
     </main>
     <footer class="footer">
-      <section class="footer__item social">
+      <div class="footer__logo">Мишка</div>
+      <section class="footer__social social">
         <h2 class="social__title visually-hidden">Мы в соцсетях:</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -140,15 +152,15 @@
           </li>
         </ul>
       </section>
-      <div class="footer__item copyright">
+      <div class="footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
       </div>
     </footer>
     <div class="size-select size-select--modal">
       <h2 class="size-select__title">Добавить в корзину</h2>
+      <p class="size-select__notice">Выберите размер:</p>
       <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
-        <span class="size-select__notice">Выберите размер:</span>
         <p class="size-select__input">
           <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
           <label class="size-select__label" for="s-size">S</label>

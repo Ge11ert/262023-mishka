@@ -24,14 +24,43 @@
 
 @media (min-width: $tablet-width) {
   .site-intro {
+    margin-top: -41px;
+    border-top: 1px solid $stroke-color;
+
     .site-intro__container {
       min-height: 585px;
+      width: 768px;
+      margin: 0 auto;
     }
 
     .site-intro__title {
       padding: 0 80px;
-      font-size: 34px;
-      line-height: 50px;
+      padding-top: 157px;
+
+      @include title-font-tablet;
+    }
+
+    .site-intro__menu {
+      max-width: 940px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .site-intro {
+    .site-intro__container {
+      min-height: 626px;
+      width: 1150px;
+    }
+
+    .site-intro__title {
+      @include title-font-desktop;
+    }
+
+    .site-intro__menu {
+      max-width: 1150px;
     }
   }
 }

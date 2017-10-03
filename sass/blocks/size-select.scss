@@ -9,12 +9,22 @@
     margin-bottom: 12px;
 
     text-transform: uppercase;
+    text-align: center;
   }
 
   .size-select__notice {
+    margin: 0;
+    margin-bottom: 21px;
     font-size: 15px;
     line-height: 30px;
+    text-align: center;
     color: $grey;
+  }
+
+  .size-select__form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .size-select__input {
@@ -40,6 +50,7 @@
   }
 
   .size-select__send-btn {
+    margin-top: 31px;
     padding: 15.8px 82px;
     font-size: 17px;
     line-height: 1.2;

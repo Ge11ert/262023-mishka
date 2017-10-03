@@ -15,6 +15,7 @@
 
   .offer__subtitle {
     display: inline-block;
+    vertical-align: top;
     margin-bottom: 23px;
     color: $theme-color;
     line-height: 20px;
@@ -26,11 +27,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
+    max-width: 500px;
   }
 
   .offer__description {
     margin: 0;
     margin-bottom: 28px;
+    max-width: 100%;
     color: $grey;
     font-size: 15px;
   }
@@ -41,11 +45,12 @@
     border-collapse: collapse;
     color: $grey;
     font-size: 15px;
+    line-height: 20px;
   }
 
   .offer__prop-name,
   .offer__prop-value {
-    padding: 7.5px 0;
+    padding: 9.5px 0;
     border-bottom: 1px solid $stroke-color;
   }
 
@@ -69,12 +74,14 @@
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: $tablet-width) {
   .offer {
     flex-direction: row;
     justify-content: space-between;
     flex-wrap: wrap;
     align-items: stretch;
+    max-width: 668px;
+    margin: 0 auto;
 
     .offer__title {
       @include title-font-tablet;
@@ -82,21 +89,81 @@
     }
 
     .offer__subtitle {
+      align-self: center;
+      width: 75px;
       margin-bottom: 0;
       line-height: 17px;
+      text-align: center;
     }
 
     .offer__content {
       position: relative;
-      padding-right: 50%;
+      width: 293px;
+      margin: 0 auto;
+      margin-top: 50px;
+      padding-right: 375px;
+    }
+
+    .offer__description {
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    .offer__price {
+      font-size: 20px;
     }
 
     .offer__image {
       position: absolute;
       top: 0;
       right: 0;
-      height: auto;
+      width: 334px;
+      height: 404px;
       margin: 0;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .offer {
+    position: relative;
+    justify-content: flex-start;
+    max-width: 1050px;
+    padding-top: 124px;
+
+    .offer__title {
+      @include title-font-desktop;
+
+      z-index: 1;
+      letter-spacing: -0.25px;
+    }
+
+    .offer__subtitle {
+      order: -1;
+      margin-top: 6px;
+      margin-right: 51px;
+      margin-left: 46px;
+    }
+
+    .offer__content {
+      position: static;
+      width: 293px;
+      min-height: 476px;
+      margin: 0;
+      margin-top: 48px;
+      margin-left: 175px;
+      padding-right: 0;
+    }
+
+    .offer__image {
+      width: 525px;
+      height: 636px;
+      top: 72px;
+      right: 50px;
+    }
+
+    .offer__price {
+      margin-top: auto;
     }
   }
 }

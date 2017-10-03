@@ -9,20 +9,24 @@
   <body>
     <header class="header">
       <nav class="main-nav">
-        <a href="./index.html" class="main-nav__logo">Mishka</a>
-        <button type="button" class="main-nav__toggle-button">Закрыть</button>
+        <div class="main-nav__logo-container">
+          <a href="./index.html" class="main-nav__logo">Mishka</a>
+          <button type="button" class="main-nav__toggle-button main-nav__opened">Закрыть</button>
+        </div>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
             <a href="catalog.html" class="site-nav__link">Каталог товаров</a>
           </li>
           <li class="site-nav__item site-nav__item--current">
-            <a class="site-nav__link">Вязание на заказ</a>
+            <a href="form.html" class="site-nav__link">Вязание на заказ</a>
           </li>
-          <li class="site-nav__item site-nav__item--search">
-            <a href="#" class="site-nav__link">Поиск по сайту</a>
+        </ul>
+        <ul class="main-nav__list user-nav">
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__link user-nav__link--search">Поиск по сайту</a>
           </li>
-          <li class="site-nav__item site-nav__item--basket">
-            <a href="#" class="site-nav__link">Корзина: <span>пока пуста</span></a>
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__link user-nav__link--basket">Корзина: <span>пока пуста</span></a>
           </li>
         </ul>
       </nav>
@@ -116,7 +120,8 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="footer__item social">
+      <div class="footer__logo">Мишка</div>
+      <section class="footer__social social">
         <h2 class="social__title visually-hidden">Мы в соцсетях:</h2>
         <ul class="social__list">
           <li class="social__item">
@@ -130,7 +135,7 @@
           </li>
         </ul>
       </section>
-      <div class="footer__item copyright">
+      <div class="footer__copyright copyright">
         <span class="copyright__text">Разработано</span>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
       </div>

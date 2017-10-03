@@ -35,3 +35,9 @@
     }
   }
 }
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin-left: 175px;
+  }
+}

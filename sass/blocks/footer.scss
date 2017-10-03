@@ -5,7 +5,46 @@
 
   background-color: $bg-color;
 
-  .footer__item:last-child {
+  .footer__logo {
+    display: none;
+    width: 102px;
+    height: 34px;
+    font-size: 0;
+
+    background-image: url("../img/logo-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .footer__social {
+    margin-bottom: 27px;
+  }
+
+  .footer__copyright {
+    padding-top: 22px;
     border-top: 1px solid #e5e5e5;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 51px;
+    padding-bottom: 58px;
+
+    .footer__logo {
+      display: block;
+    }
+
+    .footer__social {
+      margin-bottom: 0;
+    }
+
+    .footer__copyright {
+      padding: 0;
+      border: none;
+    }
   }
 }

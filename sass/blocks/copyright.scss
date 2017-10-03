@@ -1,8 +1,10 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
 
   .copyright__text {
+    margin-right: 30px;
     font-size: 19px;
     line-height: 1.2;
     font-weight: bold;
