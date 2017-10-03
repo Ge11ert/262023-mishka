@@ -65,9 +65,12 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    display: flex;
     flex-direction: column;
     padding-top: 0;
     padding-bottom: 46px;
+    border: none;
+    border: 1px solid $stroke-color;
 
     .promo__container {
       padding: 0 42px;
@@ -76,13 +79,21 @@
     .promo__video {
       order: -1;
       height: 455px;
-      margin-bottom: 38px;
       background-color: $lightgrey;
-      border-bottom: 1px solid $stroke-color;
     }
 
     .promo__title {
       font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    // flex-direction: row;
+
+    .promo__video {
+      width: 682px;
     }
   }
 }

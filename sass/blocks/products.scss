@@ -110,5 +110,42 @@
       margin-top: auto;
       font-size: 17px;
     }
+
+    .products__promo {
+      width: 668px;
+      box-sizing: border-box;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .products {
+    width: 1050px;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    .products__card {
+      display: flex;
+      flex-direction: column;
+      width: 316px;
+      margin-right: 51px;
+
+      &:nth-child(3n) {
+        margin-right: 0;
+      }
+    }
+
+    .products__info {
+      margin-bottom: 19px;
+    }
+
+    .products__image {
+      width: 316px;
+      height: 462px;
+    }
+
+    .products__promo {
+      width: 1050px;
+    }
   }
 }
