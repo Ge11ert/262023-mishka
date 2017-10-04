@@ -1,4 +1,5 @@
 .promo {
+  position: relative;
   padding-top: 23px;
   padding-bottom: 33px;
 
@@ -11,7 +12,7 @@
   .promo__title {
     position: relative;
     margin: 0;
-    margin-bottom: 23px;
+    margin-bottom: 200px;
     padding-left: 57px;
     font-size: 17px;
 
@@ -30,7 +31,9 @@
   }
 
   .promo__video {
-    position: relative;
+    position: absolute;
+    top: 95px;
+    left: 0;
     margin-bottom: 28px;
 
     font-size: 0;
@@ -65,35 +68,56 @@
 
 @media (min-width: $tablet-width) {
   .promo {
+    position: static;
     display: flex;
     flex-direction: column;
     padding-top: 0;
-    padding-bottom: 46px;
+    padding-bottom: 0;
     border: none;
-    border: 1px solid $stroke-color;
 
     .promo__container {
-      padding: 0 42px;
+      padding: 37px 41px 45px;
+      border: 1px solid $stroke-color;
     }
 
     .promo__video {
-      order: -1;
+      position: relative;
+      top: 0;
       height: 455px;
-      background-color: $lightgrey;
+      margin: 0;
+      background-color: $stroke-color;
     }
 
     .promo__title {
+      margin: 0;
+      margin-bottom: 33px;
+      padding-left: 65px;
       font-size: 20px;
+    }
+
+    .promo__text {
+      font-size: 15px;
+      line-height: 30px;
+    }
+
+    .promo__link {
+      margin-top: 33px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .promo {
-    // flex-direction: row;
+    flex-direction: row;
 
     .promo__video {
+      flex-shrink: 0;
       width: 682px;
+    }
+
+    .promo__container {
+      padding-left: 80px;
+      padding-right: 56px;
     }
   }
 }

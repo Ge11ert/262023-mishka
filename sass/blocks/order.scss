@@ -1,5 +1,7 @@
 .order {
   @include block-padding;
+  max-width: 500px;
+  margin: 0 auto;
   padding-top: 22px;
   background-color: #ffffff;
 
@@ -7,5 +9,31 @@
     margin: 0;
     font-size: 13px;
     color: $grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .order {
+    max-width: $tablet-width;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 75px;
+
+    .order__info-text {
+      @include block-padding;
+      font-size: 17px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .order {
+    max-width: $desktop-width;
+
+    .order__info-text {
+      margin-left: 175px;
+      max-width: 700px;
+    }
   }
 }

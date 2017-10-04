@@ -1,4 +1,8 @@
 .form {
+  display: flex;
+  flex-direction: column;
+  padding-top: 24px;
+
   .form__props,
   .form__name,
   .form__contacts {
@@ -21,12 +25,19 @@
   }
 
   .form__input-container {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     margin-bottom: 22px;
 
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .form__send-container {
+    display: flex;
+    flex-direction: column;
   }
 
   label {
@@ -109,5 +120,160 @@
     font-size: 14px;
     line-height: 16px;
     color: $grey;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .form {
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 56px;
+
+    .form__product,
+    .form__user {
+      width: $tablet-width;
+    }
+
+    .form__props {
+      display: flex;
+      @include block-padding;
+
+      &--color {
+        margin-bottom: 0;
+        padding-top: 50px;
+        padding-bottom: 26px;
+        background-color: $bg-color;
+      }
+    }
+
+    .form__name {
+      display: flex;
+      padding-top: 69px;
+      padding-bottom: 50px;
+      @include block-padding;
+    }
+
+    .form__contacts {
+      @include block-padding;
+      padding-top: 69px;
+      padding-bottom: 50px;
+      background-color: $bg-color;
+    }
+
+    .form__fields {
+      flex-grow: 1;
+      display: flex;
+      flex-wrap: wrap;
+      width: 501px;
+
+      &--text {
+        display: block;
+      }
+    }
+
+    .form__send-container {
+      @include block-padding;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .form__input-container {
+      flex-direction: row;
+
+      &--color {
+        width: 250px;
+        padding-bottom: 24px;
+        margin-bottom: 0;
+      }
+    }
+
+    .form__title {
+      width: 167px;
+    }
+
+    .form__input {
+      box-sizing: border-box;
+
+      &--text {
+        flex-grow: 1;
+        padding-top: 0;
+        padding-left: 18px;
+        margin-left: 26px;
+      }
+
+      &--mail {
+        margin-left: 0;
+        background-color: $bg-color;
+      }
+
+      &--phone {
+        margin-left: 0;
+        background-color: $bg-color;
+      }
+
+      &--additional {
+        width: 501px;
+      }
+    }
+
+    .form__notice {
+      order: 2;
+      font-size: 17px;
+      line-height: 30px;
+    }
+
+    .form__send {
+      width: 230px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .form {
+    .form__product,
+    .form__user {
+      width: $desktop-width;
+    }
+
+    .form__title {
+      width: 113px;
+      padding-left: 62px;
+    }
+
+    label {
+      font-size: 19px;
+    }
+
+    .form__fields {
+      &--text {
+        max-width: 700px;
+      }
+    }
+
+    .form__input {
+      &--phone {
+        max-width: 700px;
+      }
+
+      &--mail {
+        max-width: 700px;
+      }
+
+      &--additional {
+        width: 700px;
+      }
+    }
+
+    .form__send-container {
+      margin-right: 175px;
+    }
+
+    .form__send {
+      margin-left: 175px;
+    }
   }
 }
