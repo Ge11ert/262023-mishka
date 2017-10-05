@@ -1,4 +1,6 @@
 .inner-menu {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   list-style: none;
@@ -6,10 +8,16 @@
   .inner-menu__button {
     &--light {
       background-color: $theme-color;
+      background-image: url("../img/icon-interior.svg");
+      background-repeat: no-repeat;
+      background-position: right 36px center;
     }
 
     &--dark {
       background-color: $theme-dark;
+      background-image: url("../img/icon-toy.svg");
+      background-repeat: no-repeat;
+      background-position: right 27px center;
     }
   }
 
@@ -23,5 +31,42 @@
     color: #ffffff;
     font-size: 19px;
     font-weight: bold;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .inner-menu {
+    flex-direction: row;
+
+    @include block-padding;
+
+    .inner-menu__button {
+      flex-basis: 50%;
+
+      &--dark {
+        background-position: right 33px center;
+      }
+    }
+
+    .inner-menu__link {
+      padding: 29px 36px;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-menu {
+    .inner-menu__link {
+      font-size: 20px;
+      line-height: 30px;
+    }
+
+    .inner-menu__button {
+      &--dark {
+        background-position: right 36px center;
+      }
+    }
   }
 }

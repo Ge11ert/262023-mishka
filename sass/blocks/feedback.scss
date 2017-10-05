@@ -3,3 +3,12 @@
   padding-top: 39px;
   padding-bottom: 39px;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 230px;
+    margin: 0 auto;
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+}

@@ -1,4 +1,6 @@
 .comment {
+  padding-top: 23px;
+
   .comment__text {
     margin: 0;
     margin-bottom: 26px;
@@ -8,6 +10,7 @@
   }
 
   .comment__name {
+    display: block;
     font-weight: bold;
     font-style: normal;
   }
@@ -16,5 +19,26 @@
     line-height: 30px;
     color: $grey;
     font-style: normal;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .comment {
+    padding-top: 45px;
+
+    .comment__text {
+      margin-bottom: 56px;
+      font-size: 17px;
+    }
+
+    .comment__name {
+      font-size: 18px;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .comment {
+    margin-left: 175px;
   }
 }

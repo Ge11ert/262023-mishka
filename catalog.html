@@ -4,27 +4,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
   <body>
     <header class="header">
       <nav class="main-nav">
-        <a href="./index.html" class="main-nav__logo">Mishka</a>
-        <button type="button" class="main-nav__toggle-button">Закрыть</button>
+        <div class="main-nav__logo-container">
+          <a href="index.html"class="main-nav__logo">Mishka</a>
+          <button type="button" class="main-nav__toggle-button main-nav__opened">Закрыть</button>
+        </div>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item site-nav__item--current">
-            <a class="site-nav__link">Каталог товаров</a>
+            <a href="catalog.html" class="site-nav__link">Каталог товаров</a>
           </li>
           <li class="site-nav__item">
-            <a href="./form.html" class="site-nav__link">Вязание на заказ</a>
-          </li>
-          <li class="site-nav__item site-nav__item--search">
-            <a href="#" class="site-nav__link">Поиск по сайту</a>
-          </li>
-          <li class="site-nav__item site-nav__item--basket">
-            <a href="#" class="site-nav__link">Корзина: <span>пока пуста</span></a>
+            <a href="form.html" class="site-nav__link">Вязание на заказ</a>
           </li>
         </ul>
+        <ul class="main-nav__list user-nav">
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__link user-nav__link--search">Поиск по сайту</a>
+          </li>
+          <li class="user-nav__item">
+            <a href="#" class="user-nav__link user-nav__link--basket">Корзина: <span>пока пуста</span></a>
+          </li>
+        </ul>
+        <ul class="main-nav__list additional-nav">
+          <li class="additional-nav__item">
+            <a href="#" class="additional-nav__link">Новые поступления</a>
+          </li>
+          <li class="additional-nav__item">
+            <a href="#" class="additional-nav__link">Распродажа</span></a>
+          </li>
+        </ul>
+        <span class="main-nav__delivery">Бесплатная доставка по России</span>
       </nav>
     </header>
     <main class="inner-page">
@@ -65,7 +78,7 @@
             <img src="./img/photo-toys-mobile@1x.jpg" alt="Фото корзинки" width="260" height="195">
           </div>
           <div class="products__desc">
-            <h1 class="products__name"><a href="#" class="products__link">Большая корзинка для игрушек</a></h1>
+            <h1 class="products__name"><a href="#" class="products__link">Большая корзинка для&nbsp;игрушек</a></h1>
             <p class="products__info">
               Диаметр 30 см, высота 30 см
             </p>
@@ -74,15 +87,13 @@
             </p>
           </div>
         </article>
-        <section class="products__card promo">
-          <div class="promo__container">
-            <h2 class="promo__title">Процесс производства</h2>
-          </div>
+        <section class="products__promo promo">
           <div class="promo__video">
             <img src="./img/video-mobile@1x.jpg" width="260" height="150" alt="">
             <a href="#" class="promo__play">Воспроизвести</a>
           </div>
           <div class="promo__container">
+            <h2 class="promo__title">Процесс производства</h2>
             <p class="promo__text">
               По просьбам наших любимых фолловеров мы сняли для вас подробное видео
               о том, как появляются наши товары.
@@ -93,39 +104,42 @@
       </section>
     </main>
     <footer class="footer">
-      <section class="footer__item social">
-        <h2 class="social__title visually-hidden">Мы в соцсетях:</h2>
-        <ul class="social__list">
-          <li class="social__item">
-            <a href="https://instagram.com" class="social__link social__link--ig">Инстаграм</a>
-          </li>
-          <li class="social__item">
-            <a href="https://facebook.com" class="social__link social__link--fb">Фейсбук</a>
-          </li>
-          <li class="social__item">
-            <a href="https://twitter.com" class="social__link social__link--tw">Твиттер</a>
-          </li>
-        </ul>
-      </section>
-      <div class="footer__item copyright">
-        <span class="copyright__text">Разработано</span>
-        <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+      <div class="footer__container">
+        <div class="footer__logo">Мишка</div>
+        <section class="footer__social social">
+          <h2 class="social__title visually-hidden">Мы в соцсетях:</h2>
+          <ul class="social__list">
+            <li class="social__item">
+              <a href="https://instagram.com" class="social__link social__link--ig">Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a href="https://facebook.com" class="social__link social__link--fb">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a href="https://twitter.com" class="social__link social__link--tw">Твиттер</a>
+            </li>
+          </ul>
+        </section>
+        <div class="footer__copyright copyright">
+          <span class="copyright__text">Разработано</span>
+          <a href="https://htmlacademy.ru/intensive/adaptive" class="copyright__link">HTML Academy</a>
+        </div>
       </div>
     </footer>
     <div class="size-select size-select--modal">
       <h2 class="size-select__title">Добавить в корзину</h2>
+      <p class="size-select__notice">Выберите размер:</p>
       <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
-        <span class="size-select__notice">Выберите размер:</span>
         <p class="size-select__input">
-          <input type="radio" name="size" value="s" id="s-size" checked>
+          <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
           <label class="size-select__label" for="s-size">S</label>
         </p>
         <p class="size-select__input">
-          <input type="radio" name="size" value="m" id="m-size">
+          <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
           <label class="size-select__label" for="m-size">M</label>
         </p>
         <p class="size-select__input">
-          <input type="radio" name="size" value="l" id="l-size">
+          <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
           <label class="size-select__label" for="l-size">L</label>
         </p>
         <input type="submit" class="size-select__send-btn" value="Добавить">

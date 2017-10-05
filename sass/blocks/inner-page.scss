@@ -18,3 +18,24 @@
     text-align: center;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .inner-page {
+    .inner-page__container {
+      margin-top: -41px;
+      border-top: 1px solid #dfdfdf;
+    }
+
+    .inner-page__title {
+      @include title-font-tablet;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .inner-page {
+    .inner-page__title {
+      @include title-font-desktop;
+    }
+  }
+}
