@@ -14,13 +14,16 @@
 
 @media (min-width: $tablet-width) {
   .order {
-    max-width: $tablet-width;
+    max-width: 100vw;
     padding-left: 0;
     padding-right: 0;
     padding-top: 75px;
 
     .order__info-text {
       @include block-padding;
+      max-width: 700px;
+      // box-sizing: border-box;
+      margin: 0 auto;
       font-size: 17px;
       line-height: 30px;
     }
@@ -29,11 +32,10 @@
 
 @media (min-width: $desktop-width) {
   .order {
-    max-width: $desktop-width;
-
     .order__info-text {
-      margin-left: 175px;
       max-width: 700px;
+      padding: 0;
+      padding-left: 175px;
     }
   }
 }

@@ -131,13 +131,12 @@
 
     .form__product,
     .form__user {
-      width: $tablet-width;
+      width: 100vw;
     }
 
     .form__props {
       display: flex;
-
-      @include block-padding;
+      justify-content: center;
 
       &--color {
         margin-bottom: 0;
@@ -149,21 +148,22 @@
 
     .form__name {
       display: flex;
+      justify-content: center;
       padding-top: 69px;
       padding-bottom: 50px;
-
-      @include block-padding;
     }
 
     .form__contacts {
-      @include block-padding;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
       padding-top: 69px;
       padding-bottom: 50px;
       background-color: $bg-color;
     }
 
     .form__fields {
-      flex-grow: 1;
       display: flex;
       flex-wrap: wrap;
       width: 501px;
@@ -175,8 +175,10 @@
 
     .form__send-container {
       @include block-padding;
+      width: 668px;
       padding-top: 50px;
       padding-bottom: 50px;
+      margin: 0 auto;
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -208,11 +210,13 @@
       }
 
       &--mail {
+        width: 501px;
         margin-left: 0;
         background-color: $bg-color;
       }
 
       &--phone {
+        width: 501px;
         margin-left: 0;
         background-color: $bg-color;
       }
@@ -220,6 +224,32 @@
       &--additional {
         width: 501px;
       }
+    }
+
+    label {
+      font-size: 19px;
+    }
+
+    .form__input--radio + label,
+    .form__input--checkbox + label {
+      padding-left: 65px;
+      padding-top: 17px;
+      padding-bottom: 17px;
+    }
+
+    .form__input--radio + label::before {
+      width: 22px;
+      height: 22px;
+      border: 13px solid #ffffff;
+    }
+
+    .form__input--checkbox + label::before {
+      width: 52px;
+      height: 52px;
+    }
+
+    .form__input--checkbox:checked + label::before {
+      background-size: 33px 22px;
     }
 
     .form__notice {
@@ -238,7 +268,7 @@
   .form {
     .form__product,
     .form__user {
-      width: $desktop-width;
+      // width: $desktop-width;
     }
 
     .form__title {
@@ -246,11 +276,9 @@
       padding-left: 62px;
     }
 
-    label {
-      font-size: 19px;
-    }
-
     .form__fields {
+      width: 750px;
+
       &--text {
         max-width: 700px;
       }
@@ -258,11 +286,11 @@
 
     .form__input {
       &--phone {
-        max-width: 700px;
+        width: 700px;
       }
 
       &--mail {
-        max-width: 700px;
+        width: 700px;
       }
 
       &--additional {
@@ -271,7 +299,7 @@
     }
 
     .form__send-container {
-      margin-right: 175px;
+      width: 875px;
     }
 
     .form__send {
