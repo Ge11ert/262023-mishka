@@ -20,7 +20,8 @@
   .main-nav__logo {
     width: 86px;
     height: 35px;
-    margin: 0 auto;
+    margin-left: 86px;
+    margin-right: auto;
     font-size: 0;
     background-image: url("../img/logo-mobile.svg");
     background-repeat: no-repeat;
@@ -28,8 +29,8 @@
   }
 
   .main-nav__toggle-button {
-    width: 20.5px;
-    height: 20.5px;
+    width: 21px;
+    height: 21px;
     margin: auto 0;
 
     font-size: 0;
@@ -58,6 +59,7 @@
   .main-nav {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
     width: $tablet-width;
 
     .main-nav__logo-container {
@@ -66,6 +68,8 @@
     }
 
     .main-nav__logo {
+      width: 113px;
+      height: 46px;
       margin-left: 0;
     }
 

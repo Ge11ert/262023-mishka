@@ -15,17 +15,22 @@
 
   .comments-list__slider {
     margin: 0 auto;
+    margin-bottom: 38px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .comments-list {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 79px;
+    padding-bottom: 135px;
 
-    background-color: #f3f3f3;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
 
     .comments-list__title {
       order: -2;
@@ -45,8 +50,9 @@
 
     .comments-list__slider {
       margin-right: 0;
-      position: relative;
-      top: -40px;
+      position: absolute;
+      bottom: 112px;
+      right: 50px;
     }
   }
 }

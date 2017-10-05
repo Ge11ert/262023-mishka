@@ -1,13 +1,13 @@
 .contacts {
   .contacts__container {
     @include block-padding;
-    padding-top: 35px;
+    padding-top: 41px;
     padding-bottom: 36px;
   }
 
   .contacts__title {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 26px;
 
     @include title-font;
     font-size: 18px;
@@ -15,14 +15,13 @@
 
   .contacts__email {
     display: flex;
-    margin-bottom: 33px;
+    margin-bottom: 29px;
     color: $grey;
     font-size: 15px;
     line-height: 30px;
   }
 
   .contacts__link {
-    padding-bottom: 5px;
     color: $grey;
     border-bottom: 1px solid $theme-color;
   }
@@ -35,7 +34,7 @@
   }
 
   .contacts__type {
-    width: 77px;
+    width: 76px;
     flex-shrink: 0;
   }
 
@@ -61,17 +60,22 @@
 
     .contacts__container {
       display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
       flex-wrap: wrap;
+      padding-top: 56px;
+      padding-bottom: 56px;
     }
 
     .contacts__title {
       @include title-font-tablet;
 
-      width: 100%;
+      width: 668px;
+      margin-bottom: 49px;
     }
 
     .contacts__email {
-      width: 334px;
+      width: 330px;
       font-size: 17px;
     }
 

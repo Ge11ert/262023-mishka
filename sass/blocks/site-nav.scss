@@ -5,27 +5,50 @@
   padding: 0;
   list-style: none;
 
+  .site-nav__item {
+    border-bottom: 1px solid $stroke-color;
+
+    &:first-child {
+      border-top: 1px solid $stroke-color;
+    }
+  }
+
   .site-nav__link {
     display: block;
     padding-left: 75px;
-    padding-top: 26.5px;
-    padding-bottom: 26.5px;
+    padding-top: 27px;
+    padding-bottom: 28px;
 
     color: #000000;
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
-    border-bottom: 1px solid $stroke-color;
   }
 }
 
 @media (min-width: $tablet-width) {
   .site-nav {
     flex-direction: row;
+    flex-wrap: wrap;
     order: 1;
+    padding-left: 50px;
+    width: 334px;
+
+    .site-nav__item {
+      border: none;
+      padding: 17px 36px 0 0;
+
+      &:first-child {
+        border-top: none;
+      }
+
+      &:nth-child(2n+2) {
+        padding-right: 0;
+      }
+    }
 
     .site-nav__link {
-      padding: 17px 0 0 50px;
+      padding: 0;
       font-size: 15px;
       border: none;
     }

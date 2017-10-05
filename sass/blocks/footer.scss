@@ -28,6 +28,9 @@
 
 @media (min-width: $tablet-width) {
   .footer {
+    padding-top: 0;
+    padding-bottom: 0;
+
     .footer__container {
       display: flex;
       justify-content: space-between;
@@ -44,10 +47,12 @@
 
     .footer__social {
       margin-bottom: 0;
+      margin-left: 80px;
     }
 
     .footer__copyright {
       padding: 0;
+      margin-top: 7px;
       border: none;
     }
   }
