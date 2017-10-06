@@ -5,14 +5,15 @@
   width: 260px;
   margin: 0 auto;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 57px;
 
   .products__card {
     width: 100%;
     box-sizing: border-box;
+    margin-bottom: 30px;
 
-    &:not(:last-child) {
-      margin-bottom: 30px;
+    &:last-of-type {
+      margin-bottom: 31px;
     }
   }
 
@@ -21,7 +22,8 @@
   }
 
   .products__desc {
-    padding: 28px;
+    padding: 25px;
+    padding-bottom: 28px;
     border: 1px solid $stroke-color;
   }
 
@@ -40,13 +42,13 @@
     &--price {
       display: block;
       position: relative;
-      padding-top: 21px;
+      padding-top: 20px;
 
       &::after {
         content: "";
         position: absolute;
         right: 0;
-        bottom: 2px;
+        bottom: 4px;
         width: 21px;
         height: 19px;
         background-image: url("../img/icon-cart.svg");
@@ -57,7 +59,7 @@
 
   .products__info {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 19px;
     font-size: 13px;
     line-height: 30px;
     color: $grey;
@@ -75,11 +77,14 @@
 @media (min-width: $tablet-width) {
   .products {
     width: 668px;
+    padding-top: 80px;
+    padding-bottom: 64px;
 
     .products__card {
       display: flex;
+      margin-bottom: 54px;
 
-      &:not(:last-child) {
+      &:last-of-type {
         margin-bottom: 54px;
       }
     }
@@ -95,6 +100,7 @@
       display: flex;
       flex-direction: column;
       flex-grow: 1;
+      padding-bottom: 25px;
     }
 
     .products__name {
@@ -108,7 +114,16 @@
 
     .products__price {
       margin-top: auto;
+      padding-left: 4px;
       font-size: 17px;
+    }
+
+    .products__link {
+      padding-top: 23px;
+
+      &::after {
+        right: 6px;
+      }
     }
 
     .products__promo {
@@ -123,12 +138,15 @@
     width: 1050px;
     flex-direction: row;
     flex-wrap: wrap;
+    padding-top: 129px;
+    padding-bottom: 105px;
 
     .products__card {
       display: flex;
       flex-direction: column;
       width: 316px;
       margin-right: 51px;
+      // margin-bottom: 57px;
 
       &:nth-child(3n) {
         margin-right: 0;
@@ -136,7 +154,7 @@
     }
 
     .products__info {
-      margin-bottom: 19px;
+      margin-bottom: 14px;
     }
 
     .products__image {
@@ -144,8 +162,13 @@
       height: 462px;
     }
 
+    .products__price {
+      padding-left: 0;
+    }
+
     .products__promo {
       width: 1050px;
+      margin-top: 3px;
     }
   }
 }
