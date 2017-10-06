@@ -101,7 +101,9 @@
   .advantages {
     max-width: 1150px;
     margin: 0 auto;
+    padding-top: 58px;
     padding-left: 225px;
+    padding-bottom: 61px;
     box-sizing: border-box;
 
     .advantages__title {
@@ -110,6 +112,7 @@
 
     .advantages__list {
       width: 300px;
+      margin-right: 50px;
     }
   }
 }

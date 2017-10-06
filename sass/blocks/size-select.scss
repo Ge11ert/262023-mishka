@@ -24,11 +24,15 @@
   .size-select__form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
 
   .size-select__input {
     margin: 0;
+
+    &:not(:last-of-type) {
+      margin-right: 7px;
+    }
   }
 
   .size-select__label {
@@ -61,5 +65,38 @@
     border: none;
     background: none;
     background-color: $theme-color;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .size-select {
+    width: 566px;
+    padding: 0;
+    padding-top: 33px;
+    padding-bottom: 46px;
+    border: 1px solid #c6c6c6;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+
+    .size-select__title {
+      font-size: 30px;
+      line-height: 57px;
+    }
+
+    .size-select__notice {
+      font-size: 17px;
+    }
+
+    .size-select__form {
+      width: 350px;
+      margin: 0 auto;
+    }
+
+    .size-select__label {
+      width: 108px;
+    }
+
+    .size-select__send-btn {
+      width: 350px;
+    }
   }
 }

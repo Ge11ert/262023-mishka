@@ -145,6 +145,7 @@
     justify-content: flex-start;
     max-width: 1050px;
     padding-top: 124px;
+    padding-bottom: 97px;
 
     .offer__title {
       @include title-font-desktop;
@@ -163,11 +164,15 @@
     .offer__content {
       position: static;
       width: 293px;
-      min-height: 476px;
+      min-height: 479px;
       margin: 0;
       margin-top: 48px;
       margin-left: 175px;
       padding-right: 0;
+    }
+
+    .offer__description {
+      margin-bottom: 49px;
     }
 
     .offer__image {

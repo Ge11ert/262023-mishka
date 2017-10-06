@@ -42,5 +42,13 @@
 @media (min-width: $desktop-width) {
   .comment {
     margin-left: 175px;
+
+    .comment__text {
+      margin-bottom: 39px;
+    }
+
+    .comment__name {
+      font-size: 17px;
+    }
   }
 }

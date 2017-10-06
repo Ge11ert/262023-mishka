@@ -41,8 +41,8 @@
       padding-top: 31px;
       padding-bottom: 33px;
       padding-left: 82px;
-      border-left: 1px solid $stroke-color;
       border-bottom: none;
+      border-left: 1px solid $stroke-color;
 
       &--search {
         font-size: 0;
@@ -61,5 +61,21 @@
   .user-nav {
     width: 500px;
     justify-content: flex-end;
+
+    .user-nav__item {
+      padding-top: 31px;
+      padding-bottom: 33px;
+      border-left: 1px solid $stroke-color;
+    }
+
+    .user-nav__link {
+      padding-top: 0;
+      padding-bottom: 0;
+      border: none;
+
+      &--basket {
+        width: 317px;
+      }
+    }
   }
 }

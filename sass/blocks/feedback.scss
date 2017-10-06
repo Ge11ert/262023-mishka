@@ -12,3 +12,12 @@
     padding-bottom: 56px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    position: relative;
+    left: -235px;
+    top: -58px;
+    padding: 0;
+  }
+}

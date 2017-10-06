@@ -92,6 +92,7 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: $desktop-width;
+    align-items: flex-start;
 
     .main-nav__logo-container {
       width: auto;
