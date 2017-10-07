@@ -26,7 +26,7 @@
             <a href="#" class="user-nav__link user-nav__link--search">Поиск по сайту</a>
           </li>
           <li class="user-nav__item">
-            <a href="#" class="user-nav__link user-nav__link--basket">Корзина: <span>пока пуста</span></a>
+            <a href="#" class="user-nav__link user-nav__link--basket">Корзина: пока пуста</a>
           </li>
         </ul>
         <ul class="main-nav__list additional-nav">
@@ -34,7 +34,7 @@
             <a href="#" class="additional-nav__link">Новые поступления</a>
           </li>
           <li class="additional-nav__item">
-            <a href="#" class="additional-nav__link">Распродажа</span></a>
+            <a href="#" class="additional-nav__link">Распродажа</a>
           </li>
         </ul>
         <span class="main-nav__delivery">Бесплатная доставка по России</span>
@@ -52,21 +52,21 @@
         <form action="https://echo.htmlacademy.ru" class="order__form form" method="post">
           <div class="form__product">
             <div class="form__props form__props--type">
-              <span class="form__title">Тип</span>
+              <span class="form__title form__title--offset">Тип</span>
               <div class="form__fields">
-                <p class="form__input-container">
+                <p class="form__input-container form__input-container--radio">
                   <input type="radio" class="form__input form__input--radio" name="type" value="interior" id="interior" checked>
                   <label for="interior">Аксессуар для интерьера</label>
                 </p>
-                <p class="form__input-container">
+                <p class="form__input-container form__input-container--radio">
                   <input type="radio" class="form__input form__input--radio" name="type" value="toy" id="toy">
                   <label for="toy">Детская игрушка</label>
                 </p>
               </div>
             </div>
             <div class="form__props form__props--color">
-              <span class="form__title">Цвет</span>
-              <div class="form__fields">
+              <span class="form__title form__title--offset">Цвет</span>
+              <div class="form__fields form__fields--checkbox">
                 <p class="form__input-container form__input-container--color">
                   <input type="checkbox" class="form__input form__input--checkbox" id="color-white" name="color-white" checked>
                   <label for="color-white">Белый</label>
@@ -77,7 +77,7 @@
                 </p>
                 <p class="form__input-container form__input-container--color">
                   <input type="checkbox" class="form__input form__input--checkbox" id="color-tiffany" name="color-tiffany">
-                  <label for="color-tiffany">Тиффани</label>
+                  <label for="color-tiffany">&laquo;Тиффани&raquo;</label>
                 </p>
                 <p class="form__input-container form__input-container--color">
                   <input type="checkbox" class="form__input form__input--checkbox" id="color-black" name="color-black">
@@ -96,7 +96,7 @@
           </div>
           <div class="form__user">
             <div class="form__name">
-              <span class="form__title">ФИО</span>
+              <span class="form__title form__title--name">ФИО</span>
               <div class="form__fields form__fields--text">
                 <p class="form__input-container">
                   <label for="name">Имя:</label>
@@ -114,18 +114,18 @@
             </div>
             <div class="form__contacts">
               <p class="form__input-container">
-                <label for="phone" class="form__title">Тел</label>
+                <label for="phone" class="form__title form__title--phone">Тел</label>
                 <input type="tel" class="form__input form__input--text form__input--phone" id="phone" name="phoneNumber" placeholder="+7 XXX XX XX*" >
               </p>
               <p class="form__input-container">
-                <label for="email" class="form__title">E-mail</label>
+                <label for="email" class="form__title form__title--mail">E-mail</label>
                 <input type="email"class="form__input form__input--text form__input--mail" id="email" name="email" placeholder="Ваш Email*" >
               </p>
             </div>
           </div>
           <div class="form__send-container">
-            <p class="form__input-container">
-              <label for="additional" class="form__title">Доп</label>
+            <p class="form__input-container form__input-container--additional">
+              <label for="additional" class="form__title form__title--offset">Доп</label>
               <textarea class="form__input form__input--additional" name="additional" id="additional" rows="8" placeholder="Опишите все ваши пожелания к заказу"></textarea>
             </p>
             <p class="form__notice">

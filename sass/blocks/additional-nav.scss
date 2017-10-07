@@ -8,10 +8,18 @@
 @media (min-width: $desktop-width) {
   .additional-nav {
     display: flex;
+    flex-wrap: wrap;
+
+    .additional-nav__item {
+      padding: 17px 12px 0 50px;
+
+      &:nth-child(2n+2) {
+        padding-right: 0;
+      }
+    }
 
     .additional-nav__link {
       display: block;
-      padding: 17px 0 0 50px;
       font-size: 15px;
       font-weight: bold;
       color: #000000;
