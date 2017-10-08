@@ -3,7 +3,7 @@
     @include block-padding;
 
     display: flex;
-    padding-top: 30px;
+    padding-top: 24px;
     padding-bottom: 30px;
     min-height: 176px;
     box-sizing: border-box;
@@ -22,7 +22,9 @@
 @media (min-width: $tablet-width) {
   .inner-page {
     .inner-page__container {
+      min-height: 225px;
       margin-top: -41px;
+      padding-top: 45px;
       border-top: 1px solid #dfdfdf;
     }
 
@@ -34,8 +36,14 @@
 
 @media (min-width: $desktop-width) {
   .inner-page {
+    .inner-page__container {
+      min-height: 254px;
+      padding-top: 60px;
+    }
+
     .inner-page__title {
       @include title-font-desktop;
+      margin-top: 33px;
     }
   }
 }

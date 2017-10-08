@@ -33,7 +33,7 @@
 
   .offer__description {
     margin: 0;
-    margin-bottom: 28px;
+    margin-bottom: 18px;
     max-width: 100%;
     color: $grey;
     font-size: 15px;
@@ -51,11 +51,12 @@
   .offer__prop-name,
   .offer__prop-value {
     padding: 9.5px 0;
+    padding-bottom: 10px;
     border-bottom: 1px solid $stroke-color;
   }
 
   .offer__prop-name {
-    padding-right: 20px;
+    padding-right: 14px;
   }
 
   .offer__image {
@@ -82,6 +83,8 @@
     align-items: stretch;
     max-width: 668px;
     margin: 0 auto;
+    padding-top: 45px;
+    padding-bottom: 68px;
 
     .offer__title {
       @include title-font-tablet;
@@ -92,6 +95,8 @@
       align-self: center;
       width: 75px;
       margin-bottom: 0;
+      margin-top: 8px;
+      margin-right: 25px;
       line-height: 17px;
       text-align: center;
     }
@@ -101,21 +106,31 @@
       width: 293px;
       margin: 0 auto;
       margin-top: 50px;
-      padding-right: 375px;
+      padding-right: 378px;
     }
 
     .offer__description {
       font-size: 17px;
       line-height: 30px;
+      margin-bottom: 36px;
+    }
+
+    .offer__properties {
+      margin-bottom: 55px;
+    }
+
+    .offer__prop-name {
+      width: 84px;
     }
 
     .offer__price {
+      margin-bottom: 35px;
       font-size: 20px;
     }
 
     .offer__image {
       position: absolute;
-      top: 0;
+      top: 7px;
       right: 0;
       width: 334px;
       height: 404px;
@@ -130,6 +145,7 @@
     justify-content: flex-start;
     max-width: 1050px;
     padding-top: 124px;
+    padding-bottom: 97px;
 
     .offer__title {
       @include title-font-desktop;
@@ -148,11 +164,15 @@
     .offer__content {
       position: static;
       width: 293px;
-      min-height: 476px;
+      min-height: 479px;
       margin: 0;
       margin-top: 48px;
       margin-left: 175px;
       padding-right: 0;
+    }
+
+    .offer__description {
+      margin-bottom: 49px;
     }
 
     .offer__image {

@@ -1,19 +1,19 @@
 .promo {
   position: relative;
-  padding-top: 23px;
+  padding-top: 24px;
   padding-bottom: 33px;
 
   border: 1px solid $stroke-color;
 
   .promo__container {
-    padding: 0 34px;
+    padding: 0 33px;
   }
 
   .promo__title {
     position: relative;
     margin: 0;
     margin-bottom: 200px;
-    padding-left: 57px;
+    padding-left: 55px;
     font-size: 17px;
 
     &::before {
@@ -62,7 +62,7 @@
   }
 
   .promo__link {
-    margin-top: 23px;
+    margin-top: 25px;
   }
 }
 
@@ -76,7 +76,7 @@
     border: none;
 
     .promo__container {
-      padding: 37px 41px 45px;
+      padding: 37px 40px 45px;
       border: 1px solid $stroke-color;
     }
 
@@ -101,7 +101,7 @@
     }
 
     .promo__link {
-      margin-top: 33px;
+      margin-top: 34px;
     }
   }
 }
@@ -116,8 +116,23 @@
     }
 
     .promo__container {
-      padding-left: 80px;
+      padding-left: 78px;
       padding-right: 56px;
+      padding-top: 46px;
+    }
+
+    .promo__title {
+      padding: 0;
+      padding-top: 49px;
+
+      &::before {
+        top: 0;
+        transform: none;
+      }
+    }
+
+    .promo__link {
+      margin-top: 46px;
     }
   }
 }

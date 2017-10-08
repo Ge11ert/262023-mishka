@@ -1,7 +1,6 @@
 .advantages {
   @include block-padding;
-  padding-top: 28px;
-  padding-bottom: 26px;
+  padding-top: 34px;
 
   .advantages__title {
     margin: 0;
@@ -12,17 +11,18 @@
 
   .advantages__list {
     margin: 0;
+    margin-bottom: 28px;
     padding: 0;
     list-style: none;
   }
 
   .advantages__item {
-    padding-bottom: 33px;
+    margin-bottom: 25px;
     line-height: 20px;
     font-weight: bold;
 
     &:last-child {
-      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
     &::before {
@@ -30,7 +30,7 @@
       display: block;
       width: 100%;
       height: 40px;
-      margin-bottom: 25px;
+      margin-bottom: 17px;
 
       background-repeat: no-repeat;
       background-position: left center;
@@ -38,26 +38,32 @@
 
     &--flower::before {
       background-image: url("../img/icon-feature-flower.svg");
+      background-position: left 8px center;
     }
 
     &--money::before {
       background-image: url("../img/icon-feature-money.svg");
+      background-position: left top 4px;
     }
 
     &--heart::before {
       background-image: url("../img/icon-feature-heart.svg");
+      background-position: left 7px top 10px;
     }
 
     &--ball::before {
       background-image: url("../img/icon-feature-ball.svg");
+      background-position: left 3px center;
     }
 
     &--rocket::before {
       background-image: url("../img/icon-feature-rocket.svg");
+      background-position: left top 6px;
     }
 
     &--gift::before {
       background-image: url("../img/icon-feature-gift.svg");
+      background-position: left 2px top 5px;
     }
   }
 }
@@ -66,9 +72,12 @@
   .advantages {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 54px;
 
     .advantages__title {
       width: 100%;
+      margin-bottom: 47px;
 
       @include title-font-tablet;
     }
@@ -81,6 +90,7 @@
     }
 
     .advantages__item {
+      margin-bottom: 54px;
       font-size: 20px;
       line-height: 22px;
     }
@@ -91,7 +101,9 @@
   .advantages {
     max-width: 1150px;
     margin: 0 auto;
+    padding-top: 58px;
     padding-left: 225px;
+    padding-bottom: 61px;
     box-sizing: border-box;
 
     .advantages__title {
@@ -100,6 +112,7 @@
 
     .advantages__list {
       width: 300px;
+      margin-right: 50px;
     }
   }
 }

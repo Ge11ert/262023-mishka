@@ -16,21 +16,23 @@
 
   .social__link {
     display: block;
-    width: 24px;
     height: 29px;
 
     background-repeat: no-repeat;
     background-position: center;
 
     &--ig {
+      width: 22px;
       background-image: url("../img/icon-insta.svg");
     }
 
     &--fb {
+      width: 15px;
       background-image: url("../img/icon-fb.svg");
     }
 
     &--tw {
+      width: 24px;
       background-image: url("../img/icon-twitter.svg");
     }
   }

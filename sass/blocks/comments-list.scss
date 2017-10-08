@@ -15,17 +15,22 @@
 
   .comments-list__slider {
     margin: 0 auto;
+    margin-bottom: 38px;
   }
 }
 
 @media (min-width: $tablet-width) {
   .comments-list {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 79px;
+    padding-bottom: 135px;
 
-    background-color: #f3f3f3;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: left top;
 
     .comments-list__title {
       order: -2;
@@ -45,20 +50,28 @@
 
     .comments-list__slider {
       margin-right: 0;
-      position: relative;
-      top: -40px;
+      position: absolute;
+      bottom: 113px;
+      right: 50px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
   .comments-list {
+    align-items: flex-start;
     max-width: 1050px;
     margin: 0 auto;
+    padding-top: 70px;
+    background-position: left 50px top;
 
     .comments-list__title {
       @include title-font-desktop;
       margin-left: 175px;
+    }
+
+    .comments-list__write {
+      margin-top: 9px;
     }
   }
 }
