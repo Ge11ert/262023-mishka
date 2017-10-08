@@ -6,11 +6,8 @@
   list-style: none;
 
   .site-nav__item {
+    background-color: #ffffff;
     border-bottom: 1px solid $stroke-color;
-
-    &:first-child {
-      border-top: 1px solid $stroke-color;
-    }
   }
 
   .site-nav__link {
@@ -35,8 +32,9 @@
     width: 334px;
 
     .site-nav__item {
-      border: none;
       padding: 17px 36px 0 0;
+      background-color: transparent;
+      border: none;
 
       &:first-child {
         border-top: none;
@@ -68,6 +66,7 @@
       padding-left: 50px;
       padding-right: 16px;
       box-sizing: border-box;
+      background-color: #ffffff;
 
       &:nth-child(2n+1) {
         border-right: 1px solid $stroke-color;
