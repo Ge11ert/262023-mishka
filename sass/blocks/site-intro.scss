@@ -4,6 +4,11 @@
   background-repeat: no-repeat;
   background-position: center -18px;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-size: 575px auto;
+  }
+
   .site-intro__container {
     @include block-padding;
     min-height: 282px;
@@ -24,8 +29,27 @@
 
 @media (min-width: $tablet-width) {
   .site-intro {
+    position: relative;
     margin-top: -41px;
     border-top: 1px solid $stroke-color;
+    background-image: url("../img/hero-mobile@2x.jpg");
+    background-position: center;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: -13px;
+      height: 23px;
+      width: 100%;
+      background-image: url("../../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: auto 23px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-tablet@2x.jpg");
+      background-size: 1150px auto;
+    }
 
     .site-intro__container {
       min-height: 626px;
@@ -50,6 +74,19 @@
 
 @media (min-width: $desktop-width) {
   .site-intro {
+    background-image: url("../img/hero-desktop@1x.jpg");
+
+    &::after {
+      bottom: -20px;
+      height: 34px;
+      background-size: 1150px 34px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/hero-desktop@2x.jpg");
+      background-size: 1150px auto;
+    }
+
     .site-intro__container {
       min-height: 626px;
       width: 1150px;

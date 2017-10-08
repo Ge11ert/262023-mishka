@@ -87,6 +87,8 @@
       width: 113px;
       height: 46px;
       margin-left: 0;
+      background-image: url("../img/logo-tablet.svg");
+      background-position: center;
     }
 
     .main-nav__toggle-button {
@@ -114,7 +116,7 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     width: $desktop-width;
-    align-items: stretch;
+    align-items: center;
 
     .main-nav__logo-container {
       width: auto;
@@ -123,7 +125,10 @@
     }
 
     .main-nav__logo {
+      width: 149px;
+      height: 73px;
       margin: 0;
+      background-image: url("../img/logo-desktop.svg");
     }
   }
 }
