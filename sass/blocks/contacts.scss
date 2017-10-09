@@ -1,7 +1,7 @@
 .contacts {
   .contacts__container {
     @include block-padding;
-    padding-top: 41px;
+    padding-top: 35px;
     padding-bottom: 36px;
   }
 
@@ -44,6 +44,7 @@
 
   .contacts__map-container {
     width: 320px;
+    height: 457px;
     margin: 0 auto;
   }
 

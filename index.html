@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>HTML Academy: Мишка</title>
     <link rel="stylesheet" href="./css/style.css">
   </head>
@@ -11,7 +12,7 @@
       <nav class="main-nav">
         <div class="main-nav__logo-container">
           <a class="main-nav__logo">Mishka</a>
-          <button type="button" class="main-nav__toggle-button main-nav__opened">Закрыть</button>
+          <button type="button" class="main-nav__toggle-button">Закрыть</button>
         </div>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
@@ -29,7 +30,7 @@
             <a href="#" class="user-nav__link user-nav__link--basket">Корзина: пока пуста</a>
           </li>
         </ul>
-        <ul class="main-nav__list additional-nav">
+        <ul class="additional-nav">
           <li class="additional-nav__item">
             <a href="#" class="additional-nav__link">Новые поступления</a>
           </li>
@@ -75,7 +76,11 @@
               <td class="offer__prop-value">15 см</td>
             </tr>
           </table>
-          <img class="offer__image" src="./img/triple-set-mobile@1x.jpg" width="260" height="315" alt="Изображение вязаной корзинки">
+          <picture>
+            <source media="(min-width: 1150px)" srcset="./img/triple-set-desktop@1x.jpg 1x, ./img/triple-set-desktop@2x.jpg 2x">
+            <source media="(min-width: 768px)" srcset="./img/triple-set-tablet@1x.jpg 1x, ./img/triple-set-tablet@2x.jpg 2x">
+            <img class="offer__image" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Изображение вязаной корзинки">
+          </picture>
           <p class="offer__price">Цена: <span>990</span> руб.</p>
           <a href="#" class="offer__buy link-button">Заказать</a>
         </div>
@@ -129,7 +134,7 @@
           </div>
         </div>
         <div class="contacts__map-container">
-          <iframe class="contacts__map-image" width="320" height="457"src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKadbyg8xlkYRn4c8SdRTnOo&key=AIzaSyCro3tHChMiGSgzL_9c4i_nZrinIxPum5o" allowfullscreen></iframe>
+          <!-- <iframe class="contacts__map-image" width="320" height="457"src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJKadbyg8xlkYRn4c8SdRTnOo&key=AIzaSyCro3tHChMiGSgzL_9c4i_nZrinIxPum5o" allowfullscreen></iframe> -->
         </div>
       </section>
       <div class="feedback">
@@ -178,5 +183,9 @@
         <input type="submit" class="size-select__send-btn" value="Добавить">
       </form>
     </div>
+    <script src="js/picturefill.min.js" async></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCro3tHChMiGSgzL_9c4i_nZrinIxPum5o&callback=initMap"></script>
   </body>
 </html>

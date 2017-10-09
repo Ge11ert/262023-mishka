@@ -9,6 +9,7 @@
   .additional-nav {
     display: flex;
     flex-wrap: wrap;
+    z-index: 1;
 
     .additional-nav__item {
       padding: 17px 12px 0 50px;

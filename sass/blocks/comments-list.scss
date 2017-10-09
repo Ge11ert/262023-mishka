@@ -1,7 +1,21 @@
 .comments-list {
   @include block-padding;
+  position: relative;
   padding-top: 28px;
-  padding-bottom: 44px;
+  padding-bottom: 50px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 7px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-position: left center;
+    background-size: auto 7px;
+  }
 
   .comments-list__title {
     margin: 0;
@@ -31,6 +45,16 @@
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: left top;
+    background-size: 350px auto;
+
+    &::after {
+      height: 16px;
+      background-size: auto 16px;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
 
     .comments-list__title {
       order: -2;
@@ -63,7 +87,13 @@
     max-width: 1050px;
     margin: 0 auto;
     padding-top: 70px;
+    padding-bottom: 183px;
     background-position: left 50px top;
+
+    &::after {
+      height: 23px;
+      background-size: 1150px 23px;
+    }
 
     .comments-list__title {
       @include title-font-desktop;
