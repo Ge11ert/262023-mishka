@@ -16,6 +16,7 @@
   }
 
   .form__title {
+    position: relative;
     display: block;
     margin-bottom: 23px;
     font-size: 17px;
@@ -24,8 +25,24 @@
     color: $theme-color;
     text-transform: uppercase;
 
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 9px;
+      width: calc(100% - 62px);
+      height: 1px;
+      background-color: $theme-color;
+    }
+
     &--name {
-      margin-bottom: 25px;
+      margin-bottom: 26px;
+    }
+
+    &--mail {
+      &::after {
+        width: calc(100% - 81px);
+      }
     }
 
     &--phone,
@@ -42,6 +59,40 @@
 
     &--radio {
       margin-bottom: 2px;
+    }
+
+    &--phone {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 25px;
+        height: 25px;
+        background-image: url("../img/icon-phone.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--mail {
+      position: relative;
+
+      &::after {
+        content: "";
+        position: absolute;
+        right: 4px;
+        top: 50px;
+        transform: translateY(-50%);
+        width: 32px;
+        height: 32px;
+        background-image: url("../img/icon-mail.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
     &--additional {
@@ -71,6 +122,13 @@
       border-bottom: 2px solid #000000;
     }
 
+    &--text::placeholder {
+      font-size: 17px;
+      line-height: 18px;
+      font-weight: 400;
+      color: rgba($grey, 0.3);
+    }
+
     &--radio {
       display: none;
     }
@@ -81,6 +139,11 @@
 
     &--phone {
       margin-bottom: 11px;
+      padding-right: 45px;
+    }
+
+    &--mail {
+      padding-right: 45px;
     }
 
     &--additional {
@@ -229,6 +292,20 @@
         }
       }
 
+      &--phone {
+        &::after {
+          top: 6px;
+          right: 27px;
+        }
+      }
+
+      &--mail {
+        &::after {
+          top: 12px;
+          right: 22px;
+        }
+      }
+
       &--additional {
         margin-bottom: 52px;
       }
@@ -236,6 +313,10 @@
 
     .form__title {
       width: 167px;
+
+      &::after {
+        display: none;
+      }
 
       &--offset {
         padding-top: 16px;
@@ -261,6 +342,7 @@
       &--mail {
         width: 501px;
         margin-left: 0;
+        padding-right: 60px;
         background-color: $bg-color;
       }
 
@@ -268,6 +350,7 @@
         width: 501px;
         margin-left: 0;
         margin-bottom: 0;
+        padding-right: 60px;
         background-color: $bg-color;
       }
 
@@ -348,6 +431,20 @@
 
         &:nth-child(2n+2) {
           padding-left: 0;
+        }
+      }
+
+      &--phone {
+        &::after {
+          top: 6px;
+          right: 120px;
+        }
+      }
+
+      &--mail {
+        &::after {
+          top: 12px;
+          right: 115px;
         }
       }
 
