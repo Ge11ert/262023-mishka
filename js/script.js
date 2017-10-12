@@ -26,3 +26,5 @@ menuButton.classList.add("main-nav__closed");
 menuButton.addEventListener("click", function(e) {
   changeMenuState(menuLists, e);
 });
+
+svg4everybody();

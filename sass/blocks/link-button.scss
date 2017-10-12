@@ -11,4 +11,13 @@
   background: none;
   color: $grey;
   border: 2px solid $grey;
+
+  &:hover {
+    color: #ffffff;
+    background-color: $grey;
+  }
+
+  &:active {
+    color: rgba(#ffffff, 0.3);
+  }
 }

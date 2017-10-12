@@ -40,7 +40,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     padding-top: 79px;
-    padding-bottom: 135px;
+    padding-bottom: 72px;
 
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
@@ -74,9 +74,9 @@
 
     .comments-list__slider {
       margin-right: 0;
-      position: absolute;
-      bottom: 113px;
-      right: 50px;
+      position: relative;
+      bottom: 44px;
+      right: 19px;
     }
   }
 }
@@ -87,7 +87,7 @@
     max-width: 1050px;
     margin: 0 auto;
     padding-top: 70px;
-    padding-bottom: 183px;
+    padding-bottom: 119px;
     background-position: left 50px top;
 
     &::after {

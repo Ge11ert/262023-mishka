@@ -46,6 +46,10 @@
       &--dark {
         background-position: right 33px center;
       }
+
+      &:hover {
+        transform: translateY(-5px);
+      }
     }
 
     .inner-menu__link {

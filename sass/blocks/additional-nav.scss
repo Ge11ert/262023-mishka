@@ -23,8 +23,16 @@
       display: block;
       font-size: 15px;
       font-weight: bold;
-      color: #000000;
+      color: $black;
       border: none;
+
+      &:hover {
+        color: rgba($black, 0.6);
+      }
+
+      &:active {
+        color: rgba($black, 0.3);
+      }
     }
   }
 }
