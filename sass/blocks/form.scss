@@ -63,36 +63,10 @@
 
     &--phone {
       position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 10px;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 25px;
-        height: 25px;
-        background-image: url("../img/icon-phone.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-      }
     }
 
     &--mail {
       position: relative;
-
-      &::after {
-        content: "";
-        position: absolute;
-        right: 4px;
-        top: 50px;
-        transform: translateY(-50%);
-        width: 32px;
-        height: 32px;
-        background-image: url("../img/icon-mail.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-      }
     }
 
     &--additional {
@@ -102,6 +76,13 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+
+  .form__icon {
+    position: absolute;
+    right: 4px;
+    top: 50px;
+    transform: translateY(-50%);
   }
 
   .form__send-container {
@@ -292,22 +273,18 @@
         }
       }
 
-      &--phone {
-        &::after {
-          top: 6px;
-          right: 27px;
-        }
-      }
-
-      &--mail {
-        &::after {
-          top: 12px;
-          right: 22px;
-        }
-      }
-
       &--additional {
         margin-bottom: 52px;
+      }
+    }
+
+    .form__icon {
+      top: 6px;
+      right: 27px;
+
+      &--mail {
+        top: 12px;
+        right: 22px;
       }
     }
 
@@ -434,22 +411,16 @@
         }
       }
 
-      &--phone {
-        &::after {
-          top: 6px;
-          right: 120px;
-        }
-      }
-
-      &--mail {
-        &::after {
-          top: 12px;
-          right: 115px;
-        }
-      }
-
       &--additional {
         margin-bottom: 49px;
+      }
+    }
+
+    .form__icon {
+      right: 120px;
+
+      &--mail {
+        right: 115px;
       }
     }
 

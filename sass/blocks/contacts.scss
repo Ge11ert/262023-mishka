@@ -95,6 +95,7 @@
   .contacts {
     @include block-padding;
     padding-top: 71px;
+    padding-bottom: 53px;
     flex-direction: row;
     align-items: flex-start;
     max-width: 1050px;

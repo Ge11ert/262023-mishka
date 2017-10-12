@@ -16,10 +16,18 @@
     padding-top: 27px;
     padding-bottom: 28px;
 
-    color: #000000;
+    color: $black;
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
+
+    &:hover {
+      color: rgba($black, 0.6);
+    }
+
+    &:active {
+      color: rgba($black, 0.3);
+    }
   }
 }
 
@@ -62,8 +70,7 @@
 
     .site-nav__item {
       width: 236px;
-      padding-top: 30px;
-      padding-bottom: 32px;
+      padding: 0;
       padding-left: 50px;
       padding-right: 16px;
       box-sizing: border-box;
@@ -79,8 +86,9 @@
     }
 
     .site-nav__link {
+      padding-top: 30px;
+      padding-bottom: 32px;
       font-size: 17px;
-      padding: 0;
     }
   }
 }

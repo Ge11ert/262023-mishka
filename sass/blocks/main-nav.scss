@@ -89,6 +89,14 @@
       margin-left: 0;
       background-image: url("../img/logo-tablet.svg");
       background-position: center;
+
+      &[href]:hover {
+        opacity: 0.6;
+      }
+
+      &[href]:active {
+        opacity: 0.3;
+      }
     }
 
     .main-nav__toggle-button {
@@ -104,9 +112,18 @@
     .main-nav__delivery {
       display: block;
       order: 2;
+      z-index: 1;
       padding-top: 17px;
       font-size: 15px;
       color: $grey;
+
+      &:hover {
+        color: rgba($black, 0.6);
+      }
+
+      &:active {
+        color: rgba($black, 0.3);
+      }
 
       @include block-padding;
     }

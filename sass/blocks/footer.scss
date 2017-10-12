@@ -1,7 +1,7 @@
 .footer {
   @include block-padding;
   padding-top: 24px;
-  padding-bottom: 23px;
+  padding-bottom: 29px;
 
   background-color: $bg-color;
 
@@ -10,10 +10,28 @@
     width: 102px;
     height: 34px;
     font-size: 0;
+  }
 
-    background-image: url("../img/logo-footer.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  .footer__logo-link {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    &:hover {
+      fill: $theme-color;
+    }
+  }
+
+  .footer__logo-icon:active {
+    opacity: 0.3;
   }
 
   .footer__social {
@@ -21,7 +39,7 @@
   }
 
   .footer__copyright {
-    padding-top: 22px;
+    padding-top: 27px;
     border-top: 1px solid #e5e5e5;
   }
 }
@@ -48,11 +66,13 @@
     .footer__social {
       margin-bottom: 0;
       margin-left: 80px;
+      margin-top: 5px;
     }
 
     .footer__copyright {
+      margin-top: 9px;
       padding: 0;
-      margin-top: 7px;
+      padding-right: 52px;
       border: none;
     }
   }

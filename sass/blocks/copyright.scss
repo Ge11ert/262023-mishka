@@ -1,25 +1,54 @@
 .copyright {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  padding-right: 52px;
+  text-align: center;
 
-  .copyright__text {
-    margin-right: 30px;
-    padding-bottom: 4px;
+  .copyright__link {
     font-size: 19px;
     line-height: 1.2;
     font-weight: bold;
+    color: $black;
+    fill: $theme-color;
+
+    &:hover {
+      color: rgba($black, 0.6);
+      fill: $theme-dark;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
   }
 
-  .copyright__link {
-    width: 27px;
-    height: 34px;
-
+  .copyright__text {
     font-size: 0;
     line-height: 0;
+  }
 
-    background-image: url("../img/logo-htmlacademy.svg");
-    background-repeat: no-repeat;
-    background-position: center;
+  .copyright__icon {
+    position: absolute;
+    top: 24px;
+    right: 40px;
+    width: 27px;
+    height: 34px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    .copyright__icon {
+      top: -3px;
+      right: 0;
+    }
   }
 }
