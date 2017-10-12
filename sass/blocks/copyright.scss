@@ -8,10 +8,11 @@
     line-height: 1.2;
     font-weight: bold;
     color: $black;
+    fill: $theme-color;
 
     &:hover {
       color: rgba($black, 0.6);
-      fill: $theme-color;
+      fill: $theme-dark;
     }
 
     &:active {
