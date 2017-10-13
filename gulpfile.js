@@ -5,6 +5,7 @@ var sass = require("gulp-sass");
 var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
+var webp = require("gulp-webp");
 var server = require("browser-sync").create();
 
 gulp.task("style", function() {
@@ -16,6 +17,12 @@ gulp.task("style", function() {
     ]))
     .pipe(gulp.dest("css"))
     .pipe(server.stream());
+});
+
+gulp.task("webp", function () {
+    return gulp.src("img/**/*.{jpg,png}")
+        .pipe(webp({quality: 85}))
+        .pipe(gulp.dest("img"));
 });
 
 gulp.task("serve", ["style"], function() {
