@@ -15,13 +15,17 @@ google.maps.event.addListener(map, "tilesloaded", function() {
   });
 });
 
-var icon = "./img/icon-map-pin.svg";
+var icon = {
+  url: "./img/icon-map-pin.svg",
+  scaledSize: new google.maps.Size(66,101)
+};
 
 var position = new google.maps.LatLng(59.938601, 30.322997);
 
 var marker = new google.maps.Marker({
   position: position,
   icon: icon,
+  optimized: false,
   map: map
 });
 }
