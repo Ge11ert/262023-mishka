@@ -83,6 +83,12 @@
     right: 4px;
     top: 50px;
     transform: translateY(-50%);
+    fill: #d3d2d2;
+  }
+
+  .form__input--text:hover + .form__icon,
+  .form__input--text:focus + .form__icon {
+    fill: $theme-color;
   }
 
   .form__send-container {
@@ -169,7 +175,8 @@
     border-radius: 50%;
   }
 
-  .form__input--radio + label:hover::before {
+  .form__input--radio + label:hover::before,
+  .form__input--radio:focus + label::before {
     box-shadow: 0 0 0 2px $theme-color;
   }
 
@@ -192,7 +199,8 @@
     border: 2px solid $grey;
   }
 
-  .form__input--checkbox + label:hover::before {
+  .form__input--checkbox + label:hover::before,
+  .form__input--checkbox:focus + label::before {
     border-color: $theme-color;
   }
 

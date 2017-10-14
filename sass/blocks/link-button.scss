@@ -14,9 +14,11 @@
   border-radius: 0;
   cursor: pointer;
 
-  &:hover {
+  &:hover,
+  &:focus {
     color: #ffffff;
     background-color: $grey;
+    outline: none;
   }
 
   &:active {

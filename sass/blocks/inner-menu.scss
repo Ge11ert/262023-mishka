@@ -56,7 +56,8 @@
   }
 }
 
-.inner-menu__link:hover .inner-menu__icon {
+.inner-menu__link:hover .inner-menu__icon,
+.inner-menu__link:focus .inner-menu__icon {
   opacity: 0.7;
 }
 
@@ -85,8 +86,10 @@
       line-height: 30px;
       transition: padding 0.2s;
 
-      &:hover {
+      &:hover,
+      &:focus {
         padding-bottom: 34px;
+        outline: none;
       }
     }
 

@@ -47,8 +47,10 @@
     font: inherit;
     color: $black;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: rgba($black, 0.6);
+      outline: none;
     }
 
     &:active {
@@ -61,7 +63,8 @@
       padding-top: 20px;
       fill: #d3d2d2;
 
-      &:hover {
+      &:hover,
+      &:focus {
         color: rgba($black, 0.6);
         fill: $theme-color;
       }

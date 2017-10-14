@@ -9,6 +9,12 @@ function initMap() {
   mapTypeId: "roadmap"
 });
 
+google.maps.event.addListener(map, "tilesloaded", function() {
+  [].slice.apply(document.querySelectorAll(".contacts__map-container a")).forEach(function(item) {
+    item.setAttribute("tabIndex","-1");
+  });
+});
+
 var icon = "./img/icon-map-pin.svg";
 
 var position = new google.maps.LatLng(59.938601, 30.322997);

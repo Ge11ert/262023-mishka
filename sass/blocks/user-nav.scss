@@ -24,8 +24,10 @@
     font-weight: bold;
     border-bottom: 1px solid $stroke-color;
 
-    &:hover {
+    &:hover,
+    &:focus {
       color: rgba($black, 0.6);
+      outline: none;
     }
 
     &:active {
@@ -52,7 +54,8 @@
   }
 }
 
-.user-nav__link:hover .user-nav__icon {
+.user-nav__link:hover .user-nav__icon,
+.user-nav__link:focus .user-nav__icon {
   fill: $theme-color;
 }
 
