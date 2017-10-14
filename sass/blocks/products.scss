@@ -15,6 +15,14 @@
     &:last-of-type {
       margin-bottom: 31px;
     }
+
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 
   .products__image {
@@ -87,6 +95,16 @@
     line-height: 24px;
     font-weight: bold;
     border-top: 1px solid $stroke-color;
+  }
+
+  .products__promo {
+    &:hover {
+      box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+    }
+
+    &:active {
+      box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+    }
   }
 }
 

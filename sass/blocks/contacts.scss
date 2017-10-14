@@ -24,6 +24,14 @@
   .contacts__link {
     color: $grey;
     border-bottom: 1px solid $theme-color;
+
+    &:hover {
+      color: $theme-color;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .contacts__address {
