@@ -70,12 +70,25 @@
     flex-direction: column;
 
     .contacts__container {
+      position: relative;
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
       flex-wrap: wrap;
-      padding-top: 56px;
+      padding-top: 59px;
       padding-bottom: 56px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 43px;
+        right: 53px;
+        width: 47px;
+        height: 82px;
+        background-image: url("../img/icon-flag.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
     .contacts__title {
@@ -116,6 +129,12 @@
       margin-left: 175px;
       padding: 0;
       padding-top: 70px;
+      background-position: left 20px top 30px;
+
+      &::after {
+        left: -112px;
+        top: 61px;
+      }
     }
 
     .contacts__title {

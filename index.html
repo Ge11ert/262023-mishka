@@ -96,7 +96,7 @@
             <img class="offer__image" src="./img/triple-set-mobile@1x.jpg" srcset="./img/triple-set-mobile@2x.jpg 2x" alt="Изображение вязаной корзинки">
           </picture>
           <p class="offer__price">Цена: <span>990</span> руб.</p>
-          <a href="#" class="offer__buy link-button">Заказать</a>
+          <a href="#" class="offer__buy link-button size-select__show-btn">Заказать</a>
         </div>
       </article>
       <section class="advantages">
@@ -199,24 +199,26 @@
         </div>
       </div>
     </footer>
-    <div class="size-select size-select--modal">
-      <h2 class="size-select__title">Добавить в корзину</h2>
-      <p class="size-select__notice">Выберите размер:</p>
-      <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
-          <label class="size-select__label" for="s-size">S</label>
-        </p>
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
-          <label class="size-select__label" for="m-size">M</label>
-        </p>
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
-          <label class="size-select__label" for="l-size">L</label>
-        </p>
-        <input type="submit" class="size-select__send-btn" value="Добавить">
-      </form>
+    <div class="size-select">
+      <div class="size-select__container">
+        <h2 class="size-select__title">Добавить в корзину</h2>
+        <p class="size-select__notice">Выберите размер:</p>
+        <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
+            <label class="size-select__label" for="s-size">S</label>
+          </p>
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
+            <label class="size-select__label" for="m-size">M</label>
+          </p>
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
+            <label class="size-select__label" for="l-size">L</label>
+          </p>
+          <input type="submit" class="size-select__send-btn" value="Добавить">
+        </form>
+      </div>
     </div>
     <script src="js/picturefill.min.js" async></script>
     <script type="text/javascript" src="js/svg4everybody.min.js"></script>

@@ -68,7 +68,7 @@
               Рост 30 см, вес 200 г
             </p>
             <p class="products__price">
-              <a href="#" class="products__link products__link--price">
+              <a href="#" class="products__link products__link--price size-select__show-btn">
                 1 200 руб.
                 <svg class="products__icon-cart" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
               </a>
@@ -92,7 +92,7 @@
               Диаметр 15 см, высота 10 см
             </p>
             <p class="products__price">
-              <a href="#" class="products__link products__link--price">
+              <a href="#" class="products__link products__link--price size-select__show-btn">
                 690 руб.
                 <svg class="products__icon-cart" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
               </a>
@@ -116,7 +116,7 @@
               Диаметр 30 см, высота 30 см
             </p>
             <p class="products__price">
-              <a href="#" class="products__link products__link--price">
+              <a href="#" class="products__link products__link--price size-select__show-btn">
                 1 500 руб.
                 <svg class="products__icon-cart" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
               </a>
@@ -185,24 +185,26 @@
         </div>
       </div>
     </footer>
-    <div class="size-select size-select--modal">
-      <h2 class="size-select__title">Добавить в корзину</h2>
-      <p class="size-select__notice">Выберите размер:</p>
-      <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
-          <label class="size-select__label" for="s-size">S</label>
-        </p>
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
-          <label class="size-select__label" for="m-size">M</label>
-        </p>
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
-          <label class="size-select__label" for="l-size">L</label>
-        </p>
-        <input type="submit" class="size-select__send-btn" value="Добавить">
-      </form>
+    <div class="size-select">
+      <div class="size-select__container">
+        <h2 class="size-select__title">Добавить в корзину</h2>
+        <p class="size-select__notice">Выберите размер:</p>
+        <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
+            <label class="size-select__label" for="s-size">S</label>
+          </p>
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
+            <label class="size-select__label" for="m-size">M</label>
+          </p>
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
+            <label class="size-select__label" for="l-size">L</label>
+          </p>
+          <input type="submit" class="size-select__send-btn" value="Добавить">
+        </form>
+      </div>
     </div>
     <script src="js/picturefill.min.js" async></script>
     <script type="text/javascript" src="js/svg4everybody.min.js"></script>
