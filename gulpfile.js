@@ -11,6 +11,7 @@ var minify = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var rsp = require("remove-svg-properties").stream;
 var rename = require("gulp-rename");
 var run = require("run-sequence");
 var del = require("del");
@@ -23,10 +24,10 @@ gulp.task("style", function() {
     .pipe(postcss([
       autoprefixer()
     ]))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(minify())
     .pipe(rename("style.min.css"))
-    .pipe(gulp.dest("css"))
+    .pipe(gulp.dest("build/css"))
     .pipe(server.stream());
 });
 
@@ -37,7 +38,7 @@ gulp.task("images", function() {
           imagemin.jpegtran({progressive: true}),
           imagemin.svgo()
         ]))
-        .pipe(gulp.dest("img/optimized"));
+        .pipe(gulp.dest("img"));
 });
 
 gulp.task("webp", function () {
@@ -47,12 +48,15 @@ gulp.task("webp", function () {
 });
 
 gulp.task("sprite", function() {
-    return gulp.src("img/icon-*.svg")
+    return gulp.src("img/*.svg")
         .pipe(svgstore({
           inlineSvg: true
         }))
-        .pipe(rename("sprite-auto.svg"))
-        .pipe(gulp.dest("img"));
+        .pipe(rename("sprite.svg"))
+        .pipe(rsp.remove({
+          properties: [rsp.PROPS_FILL]
+        }))
+        .pipe(gulp.dest("build/img"));
 });
 
 gulp.task("html", function() {
@@ -60,7 +64,7 @@ gulp.task("html", function() {
         .pipe(posthtml([
           includeHtml()
         ]))
-        .pipe(gulp.dest("."))
+        .pipe(gulp.dest("build"))
 });
 
 gulp.task("clean", function() {
@@ -79,12 +83,12 @@ gulp.task("copy", function() {
 });
 
 gulp.task("build", function(done) {
-    run("style", "sprite", "html", done);
+    run("clean","copy","style", "sprite", "html", done);
 });
 
-gulp.task("serve", ["style"], function() {
+gulp.task("serve", function() {
   server.init({
-    server: ".",
+    server: "build/",
     notify: false,
     open: true,
     cors: true,
@@ -92,5 +96,5 @@ gulp.task("serve", ["style"], function() {
   });
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
-  gulp.watch("*.html").on("change", server.reload);
+  gulp.watch("*.html", ["html"]);
 });

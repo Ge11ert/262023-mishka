@@ -12,10 +12,6 @@
     box-sizing: border-box;
     margin-bottom: 30px;
 
-    &:last-of-type {
-      margin-bottom: 31px;
-    }
-
     &:hover {
       box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
     }
@@ -31,7 +27,7 @@
   }
 
   .products__desc {
-    padding: 25px;
+    padding: 27px;
     padding-bottom: 28px;
     border: 1px solid $stroke-color;
   }
@@ -137,8 +133,9 @@
     .products__desc {
       display: flex;
       flex-direction: column;
+      width: 334px;
       flex-grow: 1;
-      padding-bottom: 25px;
+      padding: 25px 26px;
     }
 
     .products__name {
@@ -162,6 +159,11 @@
       &::after {
         right: 6px;
       }
+    }
+
+    .products__icon-cart {
+      right: 4px;
+      bottom: 5px;
     }
 
     .products__promo {
@@ -188,6 +190,10 @@
       &:nth-child(3n) {
         margin-right: 0;
       }
+    }
+
+    .products__desc {
+      width: 262px;
     }
 
     .products__info {
