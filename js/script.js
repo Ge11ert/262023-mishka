@@ -17,16 +17,6 @@ function switchMenu(menu) {
   });
 }
 
-function notOverModal(event) {
-  var cursor = {
-    x: event.clientX,
-    y: event.clientY
-  };
-  var curPosition = document.elementFromPoint(cursor.x, cursor.y);
-
-  return curPosition.classList.contains("size-select--show") ? true : false;
-}
-
 // ------ END OF FUNCTIONS -------- //
 
 var mainMenu = document.querySelector(".main-nav");
@@ -42,19 +32,26 @@ menuButton.addEventListener("click", function(e) {
 });
 
 var sizeSelectButton = document.querySelectorAll(".size-select__show-btn");
-var sizeSelectModal = document.querySelector(".size-select");
+var sizeSelectOverlay = document.querySelector(".size-select");
+var sizeSelectModal = sizeSelectOverlay.querySelector(".size-select__container");
 
 sizeSelectButton.forEach(function(button) {
   button.addEventListener("click", function(e) {
     e.preventDefault();
-    sizeSelectModal.classList.add("size-select--show");
+    sizeSelectOverlay.classList.add("size-select--show");
   });
 });
 
-if (sizeSelectModal !== null) {
+if (sizeSelectOverlay !== null) {
   sizeSelectModal.addEventListener("click", function(e) {
-    if(notOverModal(e)) {
-      sizeSelectModal.classList.remove("size-select--show");
+    e.stopPropagation();
+  });
+  sizeSelectOverlay.addEventListener("click", function(e) {
+    sizeSelectOverlay.classList.remove("size-select--show");
+  });
+  window.addEventListener("keydown", function(e) {
+    if (e.keyCode === 27 && sizeSelectOverlay.classList.contains("size-select--show")) {
+      sizeSelectOverlay.classList.remove("size-select--show");
     }
   });
 }
