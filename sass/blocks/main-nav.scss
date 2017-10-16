@@ -60,6 +60,10 @@
     background-position: center;
     background-image: url("../img/icon-menu-close.svg");
     border: none;
+
+    &:focus {
+      outline: none;
+    }
   }
 
   .main-nav__closed {
