@@ -35,8 +35,10 @@
       width: 24px;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       fill: $theme-color;
+      outline: none;
     }
 
     &:active {

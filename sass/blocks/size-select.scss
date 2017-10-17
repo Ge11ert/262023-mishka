@@ -1,7 +1,14 @@
 .size-select {
-  @include block-padding;
-  padding-top: 31px;
-  padding-bottom: 46px;
+  display: none;
+
+  .size-select__container {
+    @include block-padding;
+    padding-top: 31px;
+    padding-bottom: 46px;
+    background-color: #ffffff;
+    border-top: 1px solid #c6c6c6;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+  }
 
   .size-select__title {
     @include title-font;
@@ -24,7 +31,7 @@
   .size-select__form {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
   }
 
   .size-select__input {
@@ -46,7 +53,11 @@
     color: $grey;
     text-align: center;
 
-    border: 2px solid transparentize($grey, 0.9);
+    border: 2px solid rgba($grey, 0.1);
+
+    &:hover {
+      border: 2px solid rgba($grey, 0.3);
+    }
   }
 
   input[type="radio"]:checked + .size-select__label {
@@ -54,6 +65,7 @@
   }
 
   .size-select__send-btn {
+    width: 100%;
     margin-top: 31px;
     padding: 15.8px 82px;
     font-size: 17px;
@@ -65,17 +77,38 @@
     border: none;
     background: none;
     background-color: $theme-color;
+    cursor: pointer;
+  }
+}
+
+.size-select--show {
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(#ffffff, 0.9);
+  z-index: 2;
+
+  .size-select__container {
+    position: fixed;
+    z-index: 2;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
   }
 }
 
 @media (min-width: $tablet-width) {
   .size-select {
-    width: 566px;
-    padding: 0;
-    padding-top: 33px;
-    padding-bottom: 46px;
-    border: 1px solid #c6c6c6;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.25);
+    .size-select__container {
+      width: 566px;
+      padding: 0;
+      padding-top: 33px;
+      padding-bottom: 46px;
+      border: 1px solid #c6c6c6;
+    }
 
     .size-select__title {
       font-size: 30px;
@@ -97,6 +130,13 @@
 
     .size-select__send-btn {
       width: 350px;
+    }
+  }
+
+  .size-select--show {
+    .size-select__container {
+      left: 50%;
+      transform: translate(-50%, -50%);
     }
   }
 }

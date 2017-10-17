@@ -30,6 +30,10 @@
 @media (min-width: $tablet-width) {
   .site-intro {
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 745px;
     margin-top: -41px;
     border-top: 1px solid $stroke-color;
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -52,9 +56,9 @@
     }
 
     .site-intro__container {
-      min-height: 626px;
       width: 768px;
       margin: 0 auto;
+      flex-grow: 1;
     }
 
     .site-intro__title {
@@ -66,7 +70,10 @@
 
     .site-intro__menu {
       max-width: 940px;
+      min-width: 768px;
+      width: 100%;
       margin: 0 auto;
+      margin-top: auto;
       box-sizing: border-box;
     }
   }
@@ -88,7 +95,6 @@
     }
 
     .site-intro__container {
-      min-height: 626px;
       width: 1150px;
     }
 

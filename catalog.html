@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Мишка</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/style.min.css">
   </head>
   <body>
     <header class="header">
@@ -15,7 +15,7 @@
         </div>
         <ul class="main-nav__list site-nav">
           <li class="site-nav__item">
-            <a href="catalog.html" class="site-nav__link">Каталог товаров</a>
+            <a class="site-nav__link">Каталог товаров</a>
           </li>
           <li class="site-nav__item">
             <a href="form.html" class="site-nav__link">Вязание на заказ</a>
@@ -43,7 +43,7 @@
             <a href="#" class="additional-nav__link">Распродажа</a>
           </li>
         </ul>
-        <span class="main-nav__delivery">Бесплатная доставка по России</span>
+        <a href="#" class="main-nav__delivery">Бесплатная доставка по России</a>
       </nav>
     </header>
     <main class="inner-page">
@@ -53,14 +53,16 @@
       <section class="products">
         <article class="products__card">
           <div class="products__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.webp 1x, ./img/photo-hare-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.webp 1x, ./img/photo-hare-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/photo-hare-mobile@1x.webp 1x, ./img/photo-hare-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x">
-              <img src="./img/photo-hare-mobile@1x.jpg" srcset="./img/photo-hare-mobile@2x.jpg 2x" alt="Фото зайчика">
-            </picture>
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.webp 1x, ./img/photo-hare-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.webp 1x, ./img/photo-hare-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-hare-mobile@1x.webp 1x, ./img/photo-hare-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="./img/photo-hare-desktop@1x.jpg 1x, ./img/photo-hare-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/photo-hare-tablet@1x.jpg 1x, ./img/photo-hare-tablet@2x.jpg 2x">
+                <img src="./img/photo-hare-mobile@1x.jpg" srcset="./img/photo-hare-mobile@2x.jpg 2x" alt="Фото зайчика">
+              </picture>
+            </a>
           </div>
           <div class="products__desc">
             <h1 class="products__name"><a href="#" class="products__link">Зайчик-попрыгайчик</a></h1>
@@ -68,7 +70,7 @@
               Рост 30 см, вес 200 г
             </p>
             <p class="products__price">
-              <a href="#" class="products__link products__link--price">
+              <a href="#" class="products__link products__link--price size-select__show-btn">
                 1 200 руб.
                 <svg class="products__icon-cart" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
               </a>
@@ -77,14 +79,16 @@
         </article>
         <article class="products__card">
           <div class="products__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.webp 1x, ./img/photo-bowl-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.webp 1x, ./img/photo-bowl-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/photo-bowl-mobile@1x.webp 1x, ./img/photo-bowl-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x">
-              <img src="./img/photo-bowl-mobile@1x.jpg" srcset="./img/photo-bowl-mobile@2x.jpg 2x"  alt="Фото корзинки">
-            </picture>
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.webp 1x, ./img/photo-bowl-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.webp 1x, ./img/photo-bowl-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-bowl-mobile@1x.webp 1x, ./img/photo-bowl-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="./img/photo-bowl-desktop@1x.jpg 1x, ./img/photo-bowl-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/photo-bowl-tablet@1x.jpg 1x, ./img/photo-bowl-tablet@2x.jpg 2x">
+                <img src="./img/photo-bowl-mobile@1x.jpg" srcset="./img/photo-bowl-mobile@2x.jpg 2x"  alt="Фото корзинки">
+              </picture>
+            </a>
           </div>
           <div class="products__desc">
             <h1 class="products__name"><a href="#" class="products__link">Корзинка для белья</a></h1>
@@ -92,7 +96,7 @@
               Диаметр 15 см, высота 10 см
             </p>
             <p class="products__price">
-              <a href="#" class="products__link products__link--price">
+              <a href="#" class="products__link products__link--price size-select__show-btn">
                 690 руб.
                 <svg class="products__icon-cart" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
               </a>
@@ -101,14 +105,16 @@
         </article>
         <article class="products__card">
           <div class="products__image">
-            <picture>
-              <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.webp 1x, ./img/photo-toys-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.webp 1x, ./img/photo-toys-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="./img/photo-toys-mobile@1x.webp 1x, ./img/photo-toys-mobile@2x.webp 2x">
-              <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
-              <img src="./img/photo-toys-mobile@1x.jpg" srcset="./img/photo-toys-mobile@2x.jpg 2x" alt="Фото корзинки">
-            </picture>
+            <a href="#">
+              <picture>
+                <source type="image/webp" media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.webp 1x, ./img/photo-toys-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.webp 1x, ./img/photo-toys-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="./img/photo-toys-mobile@1x.webp 1x, ./img/photo-toys-mobile@2x.webp 2x">
+                <source media="(min-width: 1150px)" srcset="./img/photo-toys-desktop@1x.jpg 1x, ./img/photo-toys-desktop@2x.jpg 2x">
+                <source media="(min-width: 768px)" srcset="./img/photo-toys-tablet@1x.jpg 1x, ./img/photo-toys-tablet@2x.jpg 2x">
+                <img src="./img/photo-toys-mobile@1x.jpg" srcset="./img/photo-toys-mobile@2x.jpg 2x" alt="Фото корзинки">
+              </picture>
+            </a>
           </div>
           <div class="products__desc">
             <h1 class="products__name"><a href="#" class="products__link">Большая корзинка для&nbsp;игрушек</a></h1>
@@ -116,7 +122,7 @@
               Диаметр 30 см, высота 30 см
             </p>
             <p class="products__price">
-              <a href="#" class="products__link products__link--price">
+              <a href="#" class="products__link products__link--price size-select__show-btn">
                 1 500 руб.
                 <svg class="products__icon-cart" width="20" height="19"><use xlink:href="img/sprite.svg#icon-cart"></use></svg>
               </a>
@@ -149,7 +155,7 @@
     <footer class="footer">
       <div class="footer__container">
         <div class="footer__logo">
-          <a href="#" class="footer__logo-link">
+          <a href="./index.html" class="footer__logo-link">
             Мишка
             <svg class="footer__logo-icon" width="102" height="34"><use xlink:href="img/sprite.svg#logo-footer"></use></svg>
           </a>
@@ -185,24 +191,26 @@
         </div>
       </div>
     </footer>
-    <div class="size-select size-select--modal">
-      <h2 class="size-select__title">Добавить в корзину</h2>
-      <p class="size-select__notice">Выберите размер:</p>
-      <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
-          <label class="size-select__label" for="s-size">S</label>
-        </p>
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
-          <label class="size-select__label" for="m-size">M</label>
-        </p>
-        <p class="size-select__input">
-          <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
-          <label class="size-select__label" for="l-size">L</label>
-        </p>
-        <input type="submit" class="size-select__send-btn" value="Добавить">
-      </form>
+    <div class="size-select">
+      <div class="size-select__container">
+        <h2 class="size-select__title">Добавить в корзину</h2>
+        <p class="size-select__notice">Выберите размер:</p>
+        <form class="size-select__form" action="https://echo.htmlacademy.ru" method="post">
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="s" id="s-size" checked>
+            <label class="size-select__label" for="s-size">S</label>
+          </p>
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="m" id="m-size">
+            <label class="size-select__label" for="m-size">M</label>
+          </p>
+          <p class="size-select__input">
+            <input type="radio" class="visually-hidden" name="size" value="l" id="l-size">
+            <label class="size-select__label" for="l-size">L</label>
+          </p>
+          <input type="submit" class="size-select__send-btn" value="Добавить">
+        </form>
+      </div>
     </div>
     <script src="js/picturefill.min.js" async></script>
     <script type="text/javascript" src="js/svg4everybody.min.js"></script>

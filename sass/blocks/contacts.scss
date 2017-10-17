@@ -24,6 +24,16 @@
   .contacts__link {
     color: $grey;
     border-bottom: 1px solid $theme-color;
+
+    &:hover,
+    &:focus {
+      color: $theme-color;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 
   .contacts__address {
@@ -46,6 +56,10 @@
     width: 320px;
     height: 457px;
     margin: 0 auto;
+    background-color: #ebe5d9;
+    background-image: url("../img/icon-map-pin.svg"), url("../img/map-mobile@1x.jpg");
+    background-repeat: no-repeat, no-repeat;
+    background-position: center top 145px, center;
   }
 
   .contacts__map-image {
@@ -58,35 +72,52 @@
   .contacts {
     display: flex;
     flex-direction: column;
+    padding-left: 0;
+    padding-right: 0;
 
     .contacts__container {
+      position: relative;
       display: flex;
-      justify-content: space-between;
+      justify-content: flex-start;
       align-items: flex-start;
       flex-wrap: wrap;
-      padding-top: 56px;
+      padding-top: 59px;
       padding-bottom: 56px;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 43px;
+        right: 53px;
+        width: 47px;
+        height: 82px;
+        background-image: url("../img/icon-flag.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
     }
 
     .contacts__title {
       @include title-font-tablet;
 
-      width: 668px;
+      width: 100%;
       margin-bottom: 49px;
     }
 
     .contacts__email {
-      width: 330px;
+      width: 334px;
       font-size: 17px;
     }
 
     .contacts__address {
-      width: 334px;
+      width: 330px;
       font-size: 17px;
     }
 
     .contacts__map-container {
       width: 100%;
+      background-image: url("../img/icon-map-pin.svg"), url("../img/map-tablet@1x.jpg");
+      background-size: auto, cover;
     }
   }
 }
@@ -106,11 +137,21 @@
       margin-left: 175px;
       padding: 0;
       padding-top: 70px;
+      background-position: left 20px top 30px;
+
+      &::after {
+        left: -112px;
+        top: 61px;
+      }
     }
 
     .contacts__title {
       @include title-font-desktop;
       width: auto;
+    }
+
+    .contacts__map-image {
+      background-image: url("../img/map-desktop@1x.jpg");
     }
   }
 }

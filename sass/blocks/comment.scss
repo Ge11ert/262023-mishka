@@ -20,6 +20,16 @@
     line-height: 30px;
     color: $grey;
     font-style: normal;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid $theme-color;
+      outline: none;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
   }
 }
 
