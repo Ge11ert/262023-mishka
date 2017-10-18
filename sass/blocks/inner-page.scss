@@ -5,7 +5,7 @@
     display: flex;
     padding-top: 24px;
     padding-bottom: 30px;
-    min-height: 176px;
+    min-height: 177px;
     box-sizing: border-box;
     background-color: $bg-color;
   }
@@ -25,7 +25,7 @@
       position: relative;
       min-height: 225px;
       margin-top: -41px;
-      padding-top: 45px;
+      padding-top: 44px;
       border-top: 1px solid #dfdfdf;
 
       &::after {
@@ -43,6 +43,7 @@
 
     .inner-page__title {
       @include title-font-tablet;
+      margin: auto;
     }
   }
 }

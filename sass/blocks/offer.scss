@@ -23,7 +23,7 @@
 
   .offer__title {
     margin: 0;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
 
     @include title-font;
   }
@@ -75,7 +75,7 @@
   }
 
   .offer__image {
-    margin-bottom: 20px;
+    margin-bottom: 18px;
   }
 
   .offer__price {
@@ -103,8 +103,9 @@
 
     &::after {
       height: 16px;
-      width: 100%;
-      background-size: auto 16px;
+      width: 768px;
+      background-size: 768px 16px;
+      background-position: left 20px center;
     }
 
     .offer__title {
@@ -170,14 +171,17 @@
 
     &::after {
       height: 23px;
-      background-size: 1150px 23px;
+      width: 1150px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1050px 23px;
     }
 
     .offer__title {
       @include title-font-desktop;
 
       z-index: 1;
-      letter-spacing: -0.25px;
+      margin-left: 0;
     }
 
     .offer__subtitle {

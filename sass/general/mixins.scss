@@ -18,10 +18,12 @@
   font-size: 43px;
   line-height: 50px;
   font-weight: bold;
+  margin-left: -3px;
 }
 
 @mixin title-font-desktop {
   font-size: 53px;
   line-height: 57px;
   font-weight: bold;
+  letter-spacing: -0.3px;
 }

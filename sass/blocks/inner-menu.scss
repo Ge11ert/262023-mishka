@@ -43,7 +43,7 @@
 
   .inner-menu__icon {
     position: absolute;
-    top: 30px;
+    top: 23px;
     fill: #149080;
     opacity: 0.5;
 
@@ -95,6 +95,8 @@
     }
 
     .inner-menu__icon {
+      top: 30px;
+
       &--toy {
         right: 33px;
       }

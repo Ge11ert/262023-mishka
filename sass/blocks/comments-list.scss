@@ -1,7 +1,7 @@
 .comments-list {
   @include block-padding;
   position: relative;
-  padding-top: 28px;
+  padding-top: 26px;
   padding-bottom: 50px;
 
   &::after {
@@ -24,7 +24,7 @@
   }
 
   .comments-list__item {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .comments-list__slider {
@@ -49,7 +49,9 @@
 
     &::after {
       height: 16px;
-      background-size: auto 16px;
+      width: 100%;
+      background-size: 768px 16px;
+      background-position: left 20px center;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -92,7 +94,10 @@
 
     &::after {
       height: 23px;
-      background-size: 1150px 23px;
+      width: 1150px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 1050px 23px;
     }
 
     .comments-list__title {

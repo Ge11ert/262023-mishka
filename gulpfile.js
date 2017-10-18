@@ -69,6 +69,7 @@ gulp.task("html", function() {
         ]))
         .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest("build"))
+        .pipe(server.stream());
 });
 
 gulp.task("js", function() {
