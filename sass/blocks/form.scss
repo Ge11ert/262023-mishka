@@ -123,7 +123,7 @@
       font-size: 17px;
       line-height: 18px;
       font-weight: 400;
-      color: rgba($theme-color, 0.3);
+      color: rgba($grey, 0.3);
       opacity: 1;
     }
 
@@ -355,7 +355,6 @@
       &--text::placeholder {
         font-size: 19px;
         font-weight: 400;
-        color: rgba($grey, 0.3);
       }
 
       &--mail {
