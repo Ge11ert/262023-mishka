@@ -33,7 +33,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    height: 745px;
+    height: 744px;
     margin-top: -41px;
     border-top: 1px solid $stroke-color;
     background-image: url("../img/hero-tablet@1x.jpg");
@@ -42,12 +42,13 @@
     &::after {
       content: "";
       position: absolute;
-      bottom: -13px;
+      bottom: -11px;
       height: 23px;
       width: 100%;
       background-image: url("../img/bg-zigzag-fill.svg");
       background-repeat: repeat-x;
       background-size: auto 23px;
+      background-position: -5px center;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -64,6 +65,7 @@
     .site-intro__title {
       padding: 0 80px;
       padding-top: 83px;
+      letter-spacing: 0.2px;
 
       @include title-font-tablet;
     }
@@ -85,8 +87,9 @@
 
     &::after {
       bottom: -20px;
-      height: 34px;
-      background-size: 1150px 34px;
+      height: 37px;
+      background-size: 1260px auto;
+      background-position: center;
     }
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -100,6 +103,7 @@
 
     .site-intro__title {
       @include title-font-desktop;
+      letter-spacing: 0;
     }
 
     .site-intro__menu {

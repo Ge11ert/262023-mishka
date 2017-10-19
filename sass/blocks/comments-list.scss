@@ -93,10 +93,11 @@
     background-position: left 50px top;
 
     &::after {
+      left: 50px;
       height: 23px;
-      width: 1150px;
-      background-repeat: no-repeat;
-      background-position: center;
+      width: 1050px;
+      background-repeat: repeat-x;
+      background-position: 26px center;
       background-size: 1050px 23px;
     }
 
