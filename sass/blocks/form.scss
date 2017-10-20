@@ -4,7 +4,7 @@
   padding-top: 24px;
 
   .form__props {
-    margin-bottom: 33px;
+    margin-bottom: 32px;
   }
 
   .form__name {
@@ -36,7 +36,7 @@
     }
 
     &--name {
-      margin-bottom: 26px;
+      margin-bottom: 27px;
     }
 
     &--mail {
@@ -124,6 +124,7 @@
       line-height: 18px;
       font-weight: 400;
       color: rgba($grey, 0.3);
+      opacity: 1;
     }
 
     &--phone {
@@ -138,7 +139,7 @@
     &--additional {
       width: 100%;
       height: 143px;
-      padding: 16px;
+      padding: 15px;
       font-family: inherit;
       color: $grey;
       box-sizing: border-box;
@@ -150,6 +151,11 @@
         border-color: $theme-color;
         outline: none;
       }
+    }
+
+    &--additional::placeholder {
+      color: rgba($grey, 0.3);
+      opacity: 1;
     }
   }
 
@@ -242,7 +248,7 @@
 
       &--color {
         margin-bottom: 0;
-        padding-top: 49px;
+        padding-top: 50px;
         padding-bottom: 26px;
         background-color: $bg-color;
       }
@@ -349,7 +355,6 @@
       &--text::placeholder {
         font-size: 19px;
         font-weight: 400;
-        color: rgba($grey, 0.3);
       }
 
       &--mail {
@@ -399,7 +404,7 @@
 
     .form__input--checkbox + label::before {
       width: 50px;
-      height: 50px;
+      height: 48px;
     }
 
     .form__input--checkbox:checked + label::before {
@@ -424,6 +429,10 @@
     .form__title {
       width: 113px;
       padding-left: 0;
+
+      &--mail {
+        padding-top: 3px;
+      }
     }
 
     .form__fields {
@@ -437,6 +446,12 @@
       &--text {
         width: 700px;
         margin-right: 113px;
+      }
+    }
+
+    .form__props {
+      &--color {
+        padding-top: 48px;
       }
     }
 

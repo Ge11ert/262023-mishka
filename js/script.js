@@ -32,15 +32,19 @@ menuButton.addEventListener("click", function(e) {
 });
 
 var sizeSelectButton = document.querySelectorAll(".size-select__show-btn");
-var sizeSelectOverlay = document.querySelector(".size-select");
-var sizeSelectModal = sizeSelectOverlay.querySelector(".size-select__container");
+var sizeSelectOverlay = null, sizeSelectModal = null;
 
-sizeSelectButton.forEach(function(button) {
-  button.addEventListener("click", function(e) {
-    e.preventDefault();
-    sizeSelectOverlay.classList.add("size-select--show");
+if (sizeSelectButton.length != 0) {
+  sizeSelectOverlay = document.querySelector(".size-select");
+  sizeSelectModal = sizeSelectOverlay.querySelector(".size-select__container");
+
+  sizeSelectButton.forEach(function(button) {
+    button.addEventListener("click", function(e) {
+      e.preventDefault();
+      sizeSelectOverlay.classList.add("size-select--show");
+    });
   });
-});
+}
 
 if (sizeSelectOverlay !== null) {
   sizeSelectModal.addEventListener("click", function(e) {

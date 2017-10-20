@@ -17,7 +17,7 @@
   }
 
   .advantages__item {
-    margin-bottom: 25px;
+    margin-bottom: 26px;
     line-height: 20px;
     font-weight: bold;
 
@@ -70,8 +70,10 @@
 
 @media (min-width: $tablet-width) {
   .advantages {
+    max-width: 668px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     padding-top: 50px;
     padding-bottom: 54px;
 

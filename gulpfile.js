@@ -8,6 +8,9 @@ var includeHtml = require("posthtml-include");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var minify = require("gulp-csso");
+var uglify = require("gulp-uglify");
+var htmlmin = require("gulp-htmlmin");
+var concat = require("gulp-concat");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
@@ -64,8 +67,17 @@ gulp.task("html", function() {
         .pipe(posthtml([
           includeHtml()
         ]))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest("build"))
+        .pipe(server.stream());
 });
+
+gulp.task("js", function() {
+    return gulp.src(["js/*.js","!js/*.min.js"])
+        .pipe(uglify())
+        .pipe(concat("app.min.js"))
+        .pipe(gulp.dest("build/js"));
+})
 
 gulp.task("clean", function() {
     return del("build");
@@ -83,7 +95,7 @@ gulp.task("copy", function() {
 });
 
 gulp.task("build", function(done) {
-    run("clean","copy","style", "sprite", "html", done);
+    run("clean","copy","style", "sprite", "js" ,"html", done);
 });
 
 gulp.task("serve", function() {
@@ -97,4 +109,5 @@ gulp.task("serve", function() {
 
   gulp.watch("sass/**/*.{scss,sass}", ["style"]);
   gulp.watch("*.html", ["html"]);
+  gulp.watch("js/*.js",["js"]);
 });
