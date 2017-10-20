@@ -12,6 +12,7 @@
 
   .inner-page__title {
     margin: auto;
+    margin-top: 47px;
     font-size: 27px;
     line-height: 30px;
     color: $inner-title;
@@ -44,6 +45,7 @@
     .inner-page__title {
       @include title-font-tablet;
       margin: auto;
+      margin-top: 51px;
     }
   }
 }

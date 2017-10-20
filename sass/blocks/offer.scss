@@ -43,7 +43,7 @@
     flex-direction: column;
     align-items: center;
     margin: 0 auto;
-    max-width: 500px;
+    max-width: 260px;
   }
 
   .offer__description {
@@ -126,6 +126,7 @@
     .offer__content {
       position: relative;
       width: 293px;
+      max-width: 100%;
       margin: 0 auto;
       margin-top: 50px;
       padding-right: 378px;
