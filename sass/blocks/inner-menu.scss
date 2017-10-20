@@ -75,23 +75,23 @@
 
     .inner-menu__button {
       flex-basis: 50%;
+      transition: transform 0.2s;
 
       &--dark {
         background-position: right 33px top 30px;
       }
-    }
-
-    .inner-menu__link {
-      padding: 29px 36px;
-      font-size: 20px;
-      line-height: 30px;
-      transition: padding 0.2s;
 
       &:hover,
       &:focus {
-        padding-bottom: 34px;
+        transform: translateY(-5px);
         outline: none;
       }
+    }
+
+    .inner-menu__link {
+      padding: 29px 36px 34px;
+      font-size: 20px;
+      line-height: 30px;
     }
 
     .inner-menu__icon {

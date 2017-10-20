@@ -1,6 +1,6 @@
 var map;
 
-function initMap() {
+window.initMap = function() {
 
   map = new google.maps.Map(document.querySelector(".contacts__map-container"),
 {
