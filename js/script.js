@@ -26,7 +26,7 @@ var menuLists = mainMenu.querySelectorAll(".main-nav__list");
 mainMenu.classList.add("main-nav--js-opened");
 switchMenu(menuLists);
 
-menuButton.classList.add("main-nav__toggle-button--closed");
+menuButton.classList.add("main-nav__toggle-button--show","main-nav__toggle-button--closed");
 menuButton.addEventListener("click", function(e) {
   changeMenuState(menuLists, e);
 });

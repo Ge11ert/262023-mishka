@@ -48,6 +48,7 @@
   }
 
   .main-nav__toggle-button {
+    display: none;
     width: 21px;
     height: 21px;
     margin: auto 0;
@@ -61,8 +62,8 @@
     background-image: url("../img/icon-menu-close.svg");
     border: none;
 
-    &:focus {
-      outline: none;
+    &--show {
+      display: block;
     }
 
     &--closed {
