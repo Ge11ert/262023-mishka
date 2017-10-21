@@ -1,8 +1,8 @@
 // ----- FUNCTIONS LIST ----- //
 
 (function () { // IE NodeList Polyfill //
-    if ( typeof NodeList.prototype.forEach === "function" ) return false;
-    NodeList.prototype.forEach = Array.prototype.forEach;
+  if ( typeof NodeList.prototype.forEach === "function" ) return false;
+  NodeList.prototype.forEach = Array.prototype.forEach;
 })();
 
 function changeMenuState(menu, event) {
