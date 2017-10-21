@@ -64,10 +64,10 @@
     &:focus {
       outline: none;
     }
-  }
 
-  .main-nav__closed {
-    background-image: url("../img/icon-menu-open.svg");
+    &--closed {
+      background-image: url("../img/icon-menu-open.svg");
+    }
   }
 
   .main-nav__list {
