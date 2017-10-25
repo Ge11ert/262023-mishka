@@ -7,22 +7,22 @@
 
   .user-nav__item {
     background-color: #ffffff;
+    border-bottom: 1px solid $stroke-color;
   }
 
   .user-nav__link {
     display: block;
     position: relative;
-    height: 100%;
+    width: 245px;
+    margin: 0 auto;
     padding-left: 75px;
     padding-top: 26px;
     padding-bottom: 28px;
-    box-sizing: border-box;
 
     color: $black;
     font-size: 17px;
     line-height: 24px;
     font-weight: bold;
-    border-bottom: 1px solid $stroke-color;
 
     &:hover,
     &:focus {
@@ -67,11 +67,17 @@
   .user-nav {
     flex-direction: row;
 
+    .user-nav__item {
+      border-bottom: none;
+    }
+
     .user-nav__link {
+      width: auto;
+      height: 100%;
       padding-top: 31px;
       padding-bottom: 33px;
       padding-left: 82px;
-      border-bottom: none;
+      box-sizing: border-box;
       border-left: 1px solid $stroke-color;
 
       &--search {

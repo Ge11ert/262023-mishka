@@ -3,7 +3,8 @@
   flex-direction: column;
   flex-wrap: wrap;
   margin: 0 auto;
-  width: 320px;
+  // width: 320px;
+  max-width: $tablet-width;
   border-bottom: 1px solid $stroke-color;
 
   &--js-opened {
@@ -21,6 +22,7 @@
     align-items: center;
     width: 320px;
     height: 78px;
+    margin: 0 auto;
     box-sizing: border-box;
 
     border-top: 1px solid $stroke-color;
@@ -88,6 +90,7 @@
     justify-content: space-between;
     align-items: center;
     width: $tablet-width;
+    max-width: none;
     border-bottom: none;
 
     &--js-opened {

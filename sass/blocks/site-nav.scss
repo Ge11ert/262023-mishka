@@ -12,6 +12,8 @@
 
   .site-nav__link {
     display: block;
+    width: 245px;
+    margin: 0 auto;
     padding-left: 75px;
     padding-top: 27px;
     padding-bottom: 28px;
@@ -57,6 +59,7 @@
     }
 
     .site-nav__link {
+      width: auto;
       padding: 0;
       font-size: 15px;
       border: none;

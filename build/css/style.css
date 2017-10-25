@@ -445,7 +445,7 @@ template {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
-  width: 320px;
+  max-width: 768px;
   border-bottom: 1px solid #ececec; }
   .main-nav--js-opened {
     position: absolute;
@@ -467,6 +467,7 @@ template {
             align-items: center;
     width: 320px;
     height: 78px;
+    margin: 0 auto;
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     border-top: 1px solid #ececec; }
@@ -522,6 +523,7 @@ template {
         -ms-flex-align: center;
             align-items: center;
     width: 768px;
+    max-width: none;
     border-bottom: none; }
     .main-nav--js-opened {
       position: static; }
@@ -596,6 +598,8 @@ template {
     border-bottom: 1px solid #ececec; }
   .site-nav .site-nav__link {
     display: block;
+    width: 245px;
+    margin: 0 auto;
     padding-left: 75px;
     padding-top: 27px;
     padding-bottom: 28px;
@@ -632,6 +636,7 @@ template {
       .site-nav .site-nav__item:nth-child(2n+2) {
         padding-right: 0; }
     .site-nav .site-nav__link {
+      width: auto;
       padding: 0;
       font-size: 15px;
       border: none; } }
@@ -672,21 +677,20 @@ template {
   padding: 0;
   list-style: none; }
   .user-nav .user-nav__item {
-    background-color: #ffffff; }
+    background-color: #ffffff;
+    border-bottom: 1px solid #ececec; }
   .user-nav .user-nav__link {
     display: block;
     position: relative;
-    height: 100%;
+    width: 245px;
+    margin: 0 auto;
     padding-left: 75px;
     padding-top: 26px;
     padding-bottom: 28px;
-    -webkit-box-sizing: border-box;
-            box-sizing: border-box;
     color: #000000;
     font-size: 17px;
     line-height: 24px;
-    font-weight: bold;
-    border-bottom: 1px solid #ececec; }
+    font-weight: bold; }
     .user-nav .user-nav__link:hover, .user-nav .user-nav__link:focus {
       color: rgba(0, 0, 0, 0.6);
       outline: none; }
@@ -719,11 +723,16 @@ template {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row; }
+    .user-nav .user-nav__item {
+      border-bottom: none; }
     .user-nav .user-nav__link {
+      width: auto;
+      height: 100%;
       padding-top: 31px;
       padding-bottom: 33px;
       padding-left: 82px;
-      border-bottom: none;
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
       border-left: 1px solid #ececec; }
       .user-nav .user-nav__link--search {
         font-size: 0;
@@ -1563,7 +1572,6 @@ template {
   margin: 0; }
 
 .contacts .contacts__map-container {
-  width: 320px;
   height: 457px;
   margin: 0 auto;
   background-color: #ebe5d9;
