@@ -7,7 +7,7 @@
   max-width: $tablet-width;
   border-bottom: 1px solid $stroke-color;
 
-  &--js-opened {
+  &--js-enabled {
     position: absolute;
     top: 0;
     left: 0;
@@ -68,7 +68,7 @@
       display: block;
     }
 
-    &--closed {
+    &--closed-state {
       background-image: url("../img/icon-menu-open.svg");
     }
   }
@@ -93,7 +93,7 @@
     max-width: none;
     border-bottom: none;
 
-    &--js-opened {
+    &--js-enabled {
       position: static;
     }
 
