@@ -1,9 +1,9 @@
 (function () {
-  var sliderButtons = document.querySelectorAll(".controls__button");
+  var controlsBlock = document.querySelector(".controls");
 
-  if (sliderButtons) {
-    var buttonPrev = sliderButtons.querySelector(".controls__button--prev");
-    var buttonNext = sliderButtons.querySelector(".controls__button--next");
+  if (controlsBlock) {
+    var buttonPrev = controlsBlock.querySelector(".controls__button--prev");
+    var buttonNext = controlsBlock.querySelector(".controls__button--next");
 
     buttonPrev.addEventListener('click', function () {
       window.comment.showPrev();
@@ -12,4 +12,4 @@
       window.comment.showNext();
     });
   }
-});
+})();

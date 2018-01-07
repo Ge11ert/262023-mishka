@@ -447,7 +447,7 @@ template {
   margin: 0 auto;
   max-width: 768px;
   border-bottom: 1px solid #ececec; }
-  .main-nav--js-opened {
+  .main-nav--js-enabled {
     position: absolute;
     top: 0;
     left: 0;
@@ -503,7 +503,7 @@ template {
     border: none; }
     .main-nav .main-nav__toggle-button--show {
       display: block; }
-    .main-nav .main-nav__toggle-button--closed {
+    .main-nav .main-nav__toggle-button--closed-state {
       background-image: url("../img/icon-menu-open.svg"); }
   .main-nav .main-nav__list--closed {
     display: none; }
@@ -525,7 +525,7 @@ template {
     width: 768px;
     max-width: none;
     border-bottom: none; }
-    .main-nav--js-opened {
+    .main-nav--js-enabled {
       position: static; }
     .main-nav .main-nav__logo-container {
       width: 370px;

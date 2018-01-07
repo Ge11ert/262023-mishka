@@ -34,11 +34,15 @@
   };
 
   var showPrevComment = function () {
-    return true;
+    var prevComment = (currentComment > 0) ? --currentComment : comments.length - 1;
+    renderComment(comments[prevComment]);
+    currentComment = prevComment;
   };
 
   var showNextComment = function () {
-    return true;
+    var nextComment = (currentComment < comments.length - 1) ? ++currentComment : 0;
+    renderComment(comments[nextComment]);
+    currentComment = nextComment;
   };
 
   if (commentBlock) {
