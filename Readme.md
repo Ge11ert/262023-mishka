@@ -1,4 +1,4 @@
-# Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
+# Личный проект «Мишка» [![Build status][travis-image]][travis-url]
 
 * Студент: [Артём Абрамянц](https://up.htmlacademy.ru/adaptive/12/user/262023).
 * Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/nikita_rogatnev).
@@ -20,5 +20,3 @@
 
 [travis-image]: https://travis-ci.org/htmlacademy-adaptive/262023-mishka.svg?branch=master
 [travis-url]: https://travis-ci.org/htmlacademy-adaptive/262023-mishka
-[dependency-image]: https://david-dm.org/htmlacademy-adaptive/262023-mishka/dev-status.svg?style=flat-square
-[dependency-url]: https://david-dm.org/htmlacademy-adaptive/262023-mishka?type=dev
